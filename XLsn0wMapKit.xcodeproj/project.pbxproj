@@ -1,0 +1,1018 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		350F52561EEFB4D60090C356 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 350F52551EEFB4D60090C356 /* main.m */; };
+		350F52591EEFB4D60090C356 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 350F52581EEFB4D60090C356 /* AppDelegate.m */; };
+		350F52611EEFB4D60090C356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350F52601EEFB4D60090C356 /* Assets.xcassets */; };
+		351421181EF10894005C3846 /* AliMapViewCustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420791EF10894005C3846 /* AliMapViewCustomAnnotationView.m */; };
+		351421191EF10894005C3846 /* AliMapViewCustomCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514207B1EF10894005C3846 /* AliMapViewCustomCalloutView.m */; };
+		3514211A1EF10894005C3846 /* AliMapViewCustomPinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514207D1EF10894005C3846 /* AliMapViewCustomPinAnnotationView.m */; };
+		3514211B1EF10894005C3846 /* AliMapViewDrawController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514207F1EF10894005C3846 /* AliMapViewDrawController.m */; };
+		3514211C1EF10894005C3846 /* AliMapViewDrawCustomAnnotationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420811EF10894005C3846 /* AliMapViewDrawCustomAnnotationController.m */; };
+		3514211D1EF10894005C3846 /* AliMapViewDrawPinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420831EF10894005C3846 /* AliMapViewDrawPinController.m */; };
+		3514211E1EF10894005C3846 /* AliMapViewDrawPinCustomPointController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420851EF10894005C3846 /* AliMapViewDrawPinCustomPointController.m */; };
+		3514211F1EF10894005C3846 /* AliMapViewDrawPinDefalutPointController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420871EF10894005C3846 /* AliMapViewDrawPinDefalutPointController.m */; };
+		351421201EF10894005C3846 /* AliMapViewDrawPolylineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420891EF10894005C3846 /* AliMapViewDrawPolylineController.m */; };
+		351421211EF10894005C3846 /* AliMapViewDrawSurfaceCircleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514208B1EF10894005C3846 /* AliMapViewDrawSurfaceCircleController.m */; };
+		351421221EF10894005C3846 /* AliMapViewDrawSurfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514208D1EF10894005C3846 /* AliMapViewDrawSurfaceController.m */; };
+		351421231EF10894005C3846 /* AliMapViewDrawSurfaceCustomlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514208F1EF10894005C3846 /* AliMapViewDrawSurfaceCustomlayController.m */; };
+		351421241EF10894005C3846 /* AliMapViewDrawSurfaceHeatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420911EF10894005C3846 /* AliMapViewDrawSurfaceHeatController.m */; };
+		351421251EF10894005C3846 /* AliMapViewDrawSurfaceOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420931EF10894005C3846 /* AliMapViewDrawSurfaceOverlayController.m */; };
+		351421261EF10894005C3846 /* AliMapViewCustomNavDeriveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420961EF10894005C3846 /* AliMapViewCustomNavDeriveController.m */; };
+		351421271EF10894005C3846 /* AliMapViewNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420981EF10894005C3846 /* AliMapViewNavController.m */; };
+		351421281EF10894005C3846 /* AliMapViewSystemNaviDriveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514209A1EF10894005C3846 /* AliMapViewSystemNaviDriveController.m */; };
+		351421291EF10894005C3846 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514209C1EF10894005C3846 /* UIImage+Extension.m */; };
+		3514212B1EF10894005C3846 /* AliMapRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420A21EF10894005C3846 /* AliMapRootViewController.m */; };
+		3514212C1EF10894005C3846 /* AliMapViewBackgroundPositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420A51EF10894005C3846 /* AliMapViewBackgroundPositionController.m */; };
+		3514212D1EF10894005C3846 /* AliMapViewContinuePositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420A71EF10894005C3846 /* AliMapViewContinuePositionController.m */; };
+		3514212E1EF10894005C3846 /* AliMapViewLocationDataAvailableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420A91EF10894005C3846 /* AliMapViewLocationDataAvailableController.m */; };
+		3514212F1EF10894005C3846 /* AliMapViewMonitoringRegionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420AB1EF10894005C3846 /* AliMapViewMonitoringRegionController.m */; };
+		351421301EF10894005C3846 /* AliMapViewPositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420AD1EF10894005C3846 /* AliMapViewPositionController.m */; };
+		351421311EF10894005C3846 /* AliMapViewSinglePositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420AF1EF10894005C3846 /* AliMapViewSinglePositionController.m */; };
+		351421321EF10894005C3846 /* animatedCar_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420B11EF10894005C3846 /* animatedCar_1.png */; };
+		351421331EF10894005C3846 /* animatedCar_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420B21EF10894005C3846 /* animatedCar_2.png */; };
+		351421341EF10894005C3846 /* animatedCar_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420B31EF10894005C3846 /* animatedCar_3.png */; };
+		351421351EF10894005C3846 /* animatedCar_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420B41EF10894005C3846 /* animatedCar_4.png */; };
+		351421361EF10894005C3846 /* animatedTrain_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420B51EF10894005C3846 /* animatedTrain_1.png */; };
+		351421371EF10894005C3846 /* animatedTrain_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420B61EF10894005C3846 /* animatedTrain_2.png */; };
+		351421381EF10894005C3846 /* animatedTrain_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420B71EF10894005C3846 /* animatedTrain_3.png */; };
+		351421391EF10894005C3846 /* animatedTrain_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420B81EF10894005C3846 /* animatedTrain_4.png */; };
+		3514213A1EF10894005C3846 /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420B91EF10894005C3846 /* arrow_right.png */; };
+		3514213B1EF10894005C3846 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420BA1EF10894005C3846 /* arrow_right@2x.png */; };
+		3514213C1EF10894005C3846 /* bus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420BB1EF10894005C3846 /* bus@2x.png */; };
+		3514213D1EF10894005C3846 /* car@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420BC1EF10894005C3846 /* car@2x.png */; };
+		3514213E1EF10894005C3846 /* custom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420BD1EF10894005C3846 /* custom@2x.png */; };
+		3514213F1EF10894005C3846 /* custtexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420BE1EF10894005C3846 /* custtexture.png */; };
+		351421401EF10894005C3846 /* custtexture_bad.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420BF1EF10894005C3846 /* custtexture_bad.png */; };
+		351421411EF10894005C3846 /* custtexture_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420C01EF10894005C3846 /* custtexture_green.png */; };
+		351421421EF10894005C3846 /* custtexture_no.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420C11EF10894005C3846 /* custtexture_no.png */; };
+		351421431EF10894005C3846 /* custtexture_serious.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420C21EF10894005C3846 /* custtexture_serious.png */; };
+		351421441EF10894005C3846 /* custtexture_slow.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420C31EF10894005C3846 /* custtexture_slow.png */; };
+		351421451EF10894005C3846 /* endPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420C41EF10894005C3846 /* endPoint.png */; };
+		351421461EF10894005C3846 /* endPoint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420C51EF10894005C3846 /* endPoint@2x.png */; };
+		351421471EF10894005C3846 /* GWF.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420C61EF10894005C3846 /* GWF.png */; };
+		351421481EF10894005C3846 /* heatMapData.json in Resources */ = {isa = PBXBuildFile; fileRef = 351420C71EF10894005C3846 /* heatMapData.json */; };
+		351421491EF10894005C3846 /* hema.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420C81EF10894005C3846 /* hema.png */; };
+		3514214A1EF10894005C3846 /* hema@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420C91EF10894005C3846 /* hema@2x.png */; };
+		3514214B1EF10894005C3846 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420CA1EF10894005C3846 /* icon-72.png */; };
+		3514214C1EF10894005C3846 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420CB1EF10894005C3846 /* icon-72@2x.png */; };
+		3514214D1EF10894005C3846 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420CC1EF10894005C3846 /* icon.png */; };
+		3514214E1EF10894005C3846 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420CD1EF10894005C3846 /* icon@2x.png */; };
+		3514214F1EF10894005C3846 /* locate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420CE1EF10894005C3846 /* locate@2x.png */; };
+		351421501EF10894005C3846 /* Location.plist in Resources */ = {isa = PBXBuildFile; fileRef = 351420CF1EF10894005C3846 /* Location.plist */; };
+		351421511EF10894005C3846 /* location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420D01EF10894005C3846 /* location@2x.png */; };
+		351421521EF10894005C3846 /* man@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420D11EF10894005C3846 /* man@2x.png */; };
+		351421531EF10894005C3846 /* navi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420D21EF10894005C3846 /* navi@2x.png */; };
+		351421541EF10894005C3846 /* naviBackgroundHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420D31EF10894005C3846 /* naviBackgroundHighlighted.png */; };
+		351421551EF10894005C3846 /* naviBackgroundNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420D41EF10894005C3846 /* naviBackgroundNormal.png */; };
+		351421561EF10894005C3846 /* railway_station@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420D51EF10894005C3846 /* railway_station@2x.png */; };
+		351421571EF10894005C3846 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420D61EF10894005C3846 /* search@2x.png */; };
+		351421581EF10894005C3846 /* startPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420D71EF10894005C3846 /* startPoint.png */; };
+		351421591EF10894005C3846 /* startPoint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420D81EF10894005C3846 /* startPoint@2x.png */; };
+		3514215A1EF10894005C3846 /* tiananmen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420D91EF10894005C3846 /* tiananmen@2x.png */; };
+		3514215B1EF10894005C3846 /* userPosition.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420DA1EF10894005C3846 /* userPosition.png */; };
+		3514215C1EF10894005C3846 /* userPosition@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 351420DB1EF10894005C3846 /* userPosition@2x.png */; };
+		3514215D1EF10894005C3846 /* AliMapViewBikeRouteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420DE1EF10894005C3846 /* AliMapViewBikeRouteController.m */; };
+		3514215E1EF10894005C3846 /* AliMapViewBusRouteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420E01EF10894005C3846 /* AliMapViewBusRouteController.m */; };
+		3514215F1EF10894005C3846 /* AliMapViewCarRouteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420E21EF10894005C3846 /* AliMapViewCarRouteController.m */; };
+		351421601EF10894005C3846 /* AliMapViewRouteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420E41EF10894005C3846 /* AliMapViewRouteController.m */; };
+		351421611EF10894005C3846 /* AliMapViewWalkRouteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420E61EF10894005C3846 /* AliMapViewWalkRouteController.m */; };
+		351421621EF10894005C3846 /* AliMapViewAddressSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420EA1EF10894005C3846 /* AliMapViewAddressSearchController.m */; };
+		351421631EF10894005C3846 /* AliMapViewGeocodeSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420EC1EF10894005C3846 /* AliMapViewGeocodeSearchController.m */; };
+		351421641EF10894005C3846 /* AliMapViewReGeocodeSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420EE1EF10894005C3846 /* AliMapViewReGeocodeSearchController.m */; };
+		351421651EF10894005C3846 /* AliMapViewSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420F01EF10894005C3846 /* AliMapViewSearchController.m */; };
+		351421661EF10894005C3846 /* AliMapViewShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420F21EF10894005C3846 /* AliMapViewShopCell.m */; };
+		351421671EF10894005C3846 /* AliMapViewShopCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420F41EF10894005C3846 /* AliMapViewShopCellFrame.m */; };
+		351421681EF10894005C3846 /* AliMapViewShopImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420F61EF10894005C3846 /* AliMapViewShopImageView.m */; };
+		351421691EF10894005C3846 /* AliMapViewShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420F81EF10894005C3846 /* AliMapViewShopModel.m */; };
+		3514216A1EF10894005C3846 /* AliMapViewBusRouteSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420FB1EF10894005C3846 /* AliMapViewBusRouteSearchController.m */; };
+		3514216B1EF10894005C3846 /* AliMapViewBusSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420FD1EF10894005C3846 /* AliMapViewBusSearchController.m */; };
+		3514216C1EF10894005C3846 /* AliMapViewBusStopSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351420FF1EF10894005C3846 /* AliMapViewBusStopSearchController.m */; };
+		3514216D1EF10894005C3846 /* AliMapViewDistrictSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351421021EF10894005C3846 /* AliMapViewDistrictSearchController.m */; };
+		3514216E1EF10894005C3846 /* AliMapViewPOISearchByAroundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351421051EF10894005C3846 /* AliMapViewPOISearchByAroundController.m */; };
+		3514216F1EF10894005C3846 /* AliMapViewPOISearchByIDController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351421071EF10894005C3846 /* AliMapViewPOISearchByIDController.m */; };
+		351421701EF10894005C3846 /* AliMapViewPOISearchByKeywordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351421091EF10894005C3846 /* AliMapViewPOISearchByKeywordController.m */; };
+		351421711EF10894005C3846 /* AliMapViewPOISearchByPolygonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514210B1EF10894005C3846 /* AliMapViewPOISearchByPolygonController.m */; };
+		351421721EF10894005C3846 /* AliMapViewPOISearchByRouteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514210D1EF10894005C3846 /* AliMapViewPOISearchByRouteController.m */; };
+		351421731EF10894005C3846 /* AliMapViewPOISearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514210F1EF10894005C3846 /* AliMapViewPOISearchController.m */; };
+		351421741EF10894005C3846 /* AliMapViewSearchByInputTipsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351421111EF10894005C3846 /* AliMapViewSearchByInputTipsController.m */; };
+		351421751EF10894005C3846 /* AliMapViewWeatherSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351421141EF10894005C3846 /* AliMapViewWeatherSearchController.m */; };
+		351421761EF10894005C3846 /* AliMapViewShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351421171EF10894005C3846 /* AliMapViewShowController.m */; };
+		3529546A1EEFBF8E004B717F /* backItem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 352954631EEFBF8E004B717F /* backItem@2x.png */; };
+		3529546B1EEFBF8E004B717F /* backItem@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 352954641EEFBF8E004B717F /* backItem@3x.png */; };
+		3529546C1EEFBF8E004B717F /* userPosition.png in Resources */ = {isa = PBXBuildFile; fileRef = 352954651EEFBF8E004B717F /* userPosition.png */; };
+		3529546D1EEFBF8E004B717F /* userPosition@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 352954661EEFBF8E004B717F /* userPosition@2x.png */; };
+		3529546E1EEFBF8E004B717F /* navi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 352954671EEFBF8E004B717F /* navi@2x.png */; };
+		3529546F1EEFBF8E004B717F /* naviBackgroundHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 352954681EEFBF8E004B717F /* naviBackgroundHighlighted.png */; };
+		352954701EEFBF8E004B717F /* naviBackgroundNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 352954691EEFBF8E004B717F /* naviBackgroundNormal.png */; };
+		352954881EEFCB2C004B717F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352954871EEFCB2C004B717F /* MainViewController.m */; };
+		BC9DD152857B456E8C220715 /* libPods-XLsn0wMapKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F9A3ED34B2A3C23149C2CD /* libPods-XLsn0wMapKit.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00F9A3ED34B2A3C23149C2CD /* libPods-XLsn0wMapKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XLsn0wMapKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A5F67161DE1F162C06E6447 /* Pods-XLsn0wMapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wMapKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wMapKit/Pods-XLsn0wMapKit.release.xcconfig"; sourceTree = "<group>"; };
+		350F52511EEFB4D60090C356 /* XLsn0wMapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wMapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		350F52551EEFB4D60090C356 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		350F52571EEFB4D60090C356 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		350F52581EEFB4D60090C356 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		350F52601EEFB4D60090C356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		350F52651EEFB4D60090C356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		351420781EF10894005C3846 /* AliMapViewCustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewCustomAnnotationView.h; sourceTree = "<group>"; };
+		351420791EF10894005C3846 /* AliMapViewCustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewCustomAnnotationView.m; sourceTree = "<group>"; };
+		3514207A1EF10894005C3846 /* AliMapViewCustomCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewCustomCalloutView.h; sourceTree = "<group>"; };
+		3514207B1EF10894005C3846 /* AliMapViewCustomCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewCustomCalloutView.m; sourceTree = "<group>"; };
+		3514207C1EF10894005C3846 /* AliMapViewCustomPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewCustomPinAnnotationView.h; sourceTree = "<group>"; };
+		3514207D1EF10894005C3846 /* AliMapViewCustomPinAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewCustomPinAnnotationView.m; sourceTree = "<group>"; };
+		3514207E1EF10894005C3846 /* AliMapViewDrawController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewDrawController.h; sourceTree = "<group>"; };
+		3514207F1EF10894005C3846 /* AliMapViewDrawController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewDrawController.m; sourceTree = "<group>"; };
+		351420801EF10894005C3846 /* AliMapViewDrawCustomAnnotationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewDrawCustomAnnotationController.h; sourceTree = "<group>"; };
+		351420811EF10894005C3846 /* AliMapViewDrawCustomAnnotationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewDrawCustomAnnotationController.m; sourceTree = "<group>"; };
+		351420821EF10894005C3846 /* AliMapViewDrawPinController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewDrawPinController.h; sourceTree = "<group>"; };
+		351420831EF10894005C3846 /* AliMapViewDrawPinController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewDrawPinController.m; sourceTree = "<group>"; };
+		351420841EF10894005C3846 /* AliMapViewDrawPinCustomPointController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewDrawPinCustomPointController.h; sourceTree = "<group>"; };
+		351420851EF10894005C3846 /* AliMapViewDrawPinCustomPointController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewDrawPinCustomPointController.m; sourceTree = "<group>"; };
+		351420861EF10894005C3846 /* AliMapViewDrawPinDefalutPointController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewDrawPinDefalutPointController.h; sourceTree = "<group>"; };
+		351420871EF10894005C3846 /* AliMapViewDrawPinDefalutPointController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewDrawPinDefalutPointController.m; sourceTree = "<group>"; };
+		351420881EF10894005C3846 /* AliMapViewDrawPolylineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewDrawPolylineController.h; sourceTree = "<group>"; };
+		351420891EF10894005C3846 /* AliMapViewDrawPolylineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewDrawPolylineController.m; sourceTree = "<group>"; };
+		3514208A1EF10894005C3846 /* AliMapViewDrawSurfaceCircleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewDrawSurfaceCircleController.h; sourceTree = "<group>"; };
+		3514208B1EF10894005C3846 /* AliMapViewDrawSurfaceCircleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewDrawSurfaceCircleController.m; sourceTree = "<group>"; };
+		3514208C1EF10894005C3846 /* AliMapViewDrawSurfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewDrawSurfaceController.h; sourceTree = "<group>"; };
+		3514208D1EF10894005C3846 /* AliMapViewDrawSurfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewDrawSurfaceController.m; sourceTree = "<group>"; };
+		3514208E1EF10894005C3846 /* AliMapViewDrawSurfaceCustomlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewDrawSurfaceCustomlayController.h; sourceTree = "<group>"; };
+		3514208F1EF10894005C3846 /* AliMapViewDrawSurfaceCustomlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewDrawSurfaceCustomlayController.m; sourceTree = "<group>"; };
+		351420901EF10894005C3846 /* AliMapViewDrawSurfaceHeatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewDrawSurfaceHeatController.h; sourceTree = "<group>"; };
+		351420911EF10894005C3846 /* AliMapViewDrawSurfaceHeatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewDrawSurfaceHeatController.m; sourceTree = "<group>"; };
+		351420921EF10894005C3846 /* AliMapViewDrawSurfaceOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewDrawSurfaceOverlayController.h; sourceTree = "<group>"; };
+		351420931EF10894005C3846 /* AliMapViewDrawSurfaceOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewDrawSurfaceOverlayController.m; sourceTree = "<group>"; };
+		351420951EF10894005C3846 /* AliMapViewCustomNavDeriveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewCustomNavDeriveController.h; sourceTree = "<group>"; };
+		351420961EF10894005C3846 /* AliMapViewCustomNavDeriveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewCustomNavDeriveController.m; sourceTree = "<group>"; };
+		351420971EF10894005C3846 /* AliMapViewNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewNavController.h; sourceTree = "<group>"; };
+		351420981EF10894005C3846 /* AliMapViewNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewNavController.m; sourceTree = "<group>"; };
+		351420991EF10894005C3846 /* AliMapViewSystemNaviDriveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewSystemNaviDriveController.h; sourceTree = "<group>"; };
+		3514209A1EF10894005C3846 /* AliMapViewSystemNaviDriveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewSystemNaviDriveController.m; sourceTree = "<group>"; };
+		3514209B1EF10894005C3846 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		3514209C1EF10894005C3846 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		351420A11EF10894005C3846 /* AliMapRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapRootViewController.h; sourceTree = "<group>"; };
+		351420A21EF10894005C3846 /* AliMapRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapRootViewController.m; sourceTree = "<group>"; };
+		351420A41EF10894005C3846 /* AliMapViewBackgroundPositionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewBackgroundPositionController.h; sourceTree = "<group>"; };
+		351420A51EF10894005C3846 /* AliMapViewBackgroundPositionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewBackgroundPositionController.m; sourceTree = "<group>"; };
+		351420A61EF10894005C3846 /* AliMapViewContinuePositionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewContinuePositionController.h; sourceTree = "<group>"; };
+		351420A71EF10894005C3846 /* AliMapViewContinuePositionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewContinuePositionController.m; sourceTree = "<group>"; };
+		351420A81EF10894005C3846 /* AliMapViewLocationDataAvailableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewLocationDataAvailableController.h; sourceTree = "<group>"; };
+		351420A91EF10894005C3846 /* AliMapViewLocationDataAvailableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewLocationDataAvailableController.m; sourceTree = "<group>"; };
+		351420AA1EF10894005C3846 /* AliMapViewMonitoringRegionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewMonitoringRegionController.h; sourceTree = "<group>"; };
+		351420AB1EF10894005C3846 /* AliMapViewMonitoringRegionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewMonitoringRegionController.m; sourceTree = "<group>"; };
+		351420AC1EF10894005C3846 /* AliMapViewPositionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewPositionController.h; sourceTree = "<group>"; };
+		351420AD1EF10894005C3846 /* AliMapViewPositionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewPositionController.m; sourceTree = "<group>"; };
+		351420AE1EF10894005C3846 /* AliMapViewSinglePositionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewSinglePositionController.h; sourceTree = "<group>"; };
+		351420AF1EF10894005C3846 /* AliMapViewSinglePositionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewSinglePositionController.m; sourceTree = "<group>"; };
+		351420B11EF10894005C3846 /* animatedCar_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedCar_1.png; sourceTree = "<group>"; };
+		351420B21EF10894005C3846 /* animatedCar_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedCar_2.png; sourceTree = "<group>"; };
+		351420B31EF10894005C3846 /* animatedCar_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedCar_3.png; sourceTree = "<group>"; };
+		351420B41EF10894005C3846 /* animatedCar_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedCar_4.png; sourceTree = "<group>"; };
+		351420B51EF10894005C3846 /* animatedTrain_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedTrain_1.png; sourceTree = "<group>"; };
+		351420B61EF10894005C3846 /* animatedTrain_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedTrain_2.png; sourceTree = "<group>"; };
+		351420B71EF10894005C3846 /* animatedTrain_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedTrain_3.png; sourceTree = "<group>"; };
+		351420B81EF10894005C3846 /* animatedTrain_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedTrain_4.png; sourceTree = "<group>"; };
+		351420B91EF10894005C3846 /* arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_right.png; sourceTree = "<group>"; };
+		351420BA1EF10894005C3846 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
+		351420BB1EF10894005C3846 /* bus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus@2x.png"; sourceTree = "<group>"; };
+		351420BC1EF10894005C3846 /* car@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car@2x.png"; sourceTree = "<group>"; };
+		351420BD1EF10894005C3846 /* custom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "custom@2x.png"; sourceTree = "<group>"; };
+		351420BE1EF10894005C3846 /* custtexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = custtexture.png; sourceTree = "<group>"; };
+		351420BF1EF10894005C3846 /* custtexture_bad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = custtexture_bad.png; sourceTree = "<group>"; };
+		351420C01EF10894005C3846 /* custtexture_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = custtexture_green.png; sourceTree = "<group>"; };
+		351420C11EF10894005C3846 /* custtexture_no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = custtexture_no.png; sourceTree = "<group>"; };
+		351420C21EF10894005C3846 /* custtexture_serious.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = custtexture_serious.png; sourceTree = "<group>"; };
+		351420C31EF10894005C3846 /* custtexture_slow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = custtexture_slow.png; sourceTree = "<group>"; };
+		351420C41EF10894005C3846 /* endPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = endPoint.png; sourceTree = "<group>"; };
+		351420C51EF10894005C3846 /* endPoint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "endPoint@2x.png"; sourceTree = "<group>"; };
+		351420C61EF10894005C3846 /* GWF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GWF.png; sourceTree = "<group>"; };
+		351420C71EF10894005C3846 /* heatMapData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heatMapData.json; sourceTree = "<group>"; };
+		351420C81EF10894005C3846 /* hema.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hema.png; sourceTree = "<group>"; };
+		351420C91EF10894005C3846 /* hema@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hema@2x.png"; sourceTree = "<group>"; };
+		351420CA1EF10894005C3846 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		351420CB1EF10894005C3846 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
+		351420CC1EF10894005C3846 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		351420CD1EF10894005C3846 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		351420CE1EF10894005C3846 /* locate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locate@2x.png"; sourceTree = "<group>"; };
+		351420CF1EF10894005C3846 /* Location.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Location.plist; sourceTree = "<group>"; };
+		351420D01EF10894005C3846 /* location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@2x.png"; sourceTree = "<group>"; };
+		351420D11EF10894005C3846 /* man@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man@2x.png"; sourceTree = "<group>"; };
+		351420D21EF10894005C3846 /* navi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi@2x.png"; sourceTree = "<group>"; };
+		351420D31EF10894005C3846 /* naviBackgroundHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naviBackgroundHighlighted.png; sourceTree = "<group>"; };
+		351420D41EF10894005C3846 /* naviBackgroundNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naviBackgroundNormal.png; sourceTree = "<group>"; };
+		351420D51EF10894005C3846 /* railway_station@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "railway_station@2x.png"; sourceTree = "<group>"; };
+		351420D61EF10894005C3846 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		351420D71EF10894005C3846 /* startPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startPoint.png; sourceTree = "<group>"; };
+		351420D81EF10894005C3846 /* startPoint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startPoint@2x.png"; sourceTree = "<group>"; };
+		351420D91EF10894005C3846 /* tiananmen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiananmen@2x.png"; sourceTree = "<group>"; };
+		351420DA1EF10894005C3846 /* userPosition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userPosition.png; sourceTree = "<group>"; };
+		351420DB1EF10894005C3846 /* userPosition@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "userPosition@2x.png"; sourceTree = "<group>"; };
+		351420DD1EF10894005C3846 /* AliMapViewBikeRouteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewBikeRouteController.h; sourceTree = "<group>"; };
+		351420DE1EF10894005C3846 /* AliMapViewBikeRouteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewBikeRouteController.m; sourceTree = "<group>"; };
+		351420DF1EF10894005C3846 /* AliMapViewBusRouteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewBusRouteController.h; sourceTree = "<group>"; };
+		351420E01EF10894005C3846 /* AliMapViewBusRouteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewBusRouteController.m; sourceTree = "<group>"; };
+		351420E11EF10894005C3846 /* AliMapViewCarRouteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewCarRouteController.h; sourceTree = "<group>"; };
+		351420E21EF10894005C3846 /* AliMapViewCarRouteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewCarRouteController.m; sourceTree = "<group>"; };
+		351420E31EF10894005C3846 /* AliMapViewRouteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewRouteController.h; sourceTree = "<group>"; };
+		351420E41EF10894005C3846 /* AliMapViewRouteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewRouteController.m; sourceTree = "<group>"; };
+		351420E51EF10894005C3846 /* AliMapViewWalkRouteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewWalkRouteController.h; sourceTree = "<group>"; };
+		351420E61EF10894005C3846 /* AliMapViewWalkRouteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewWalkRouteController.m; sourceTree = "<group>"; };
+		351420E91EF10894005C3846 /* AliMapViewAddressSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewAddressSearchController.h; sourceTree = "<group>"; };
+		351420EA1EF10894005C3846 /* AliMapViewAddressSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewAddressSearchController.m; sourceTree = "<group>"; };
+		351420EB1EF10894005C3846 /* AliMapViewGeocodeSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewGeocodeSearchController.h; sourceTree = "<group>"; };
+		351420EC1EF10894005C3846 /* AliMapViewGeocodeSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewGeocodeSearchController.m; sourceTree = "<group>"; };
+		351420ED1EF10894005C3846 /* AliMapViewReGeocodeSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewReGeocodeSearchController.h; sourceTree = "<group>"; };
+		351420EE1EF10894005C3846 /* AliMapViewReGeocodeSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewReGeocodeSearchController.m; sourceTree = "<group>"; };
+		351420EF1EF10894005C3846 /* AliMapViewSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewSearchController.h; sourceTree = "<group>"; };
+		351420F01EF10894005C3846 /* AliMapViewSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewSearchController.m; sourceTree = "<group>"; };
+		351420F11EF10894005C3846 /* AliMapViewShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewShopCell.h; sourceTree = "<group>"; };
+		351420F21EF10894005C3846 /* AliMapViewShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewShopCell.m; sourceTree = "<group>"; };
+		351420F31EF10894005C3846 /* AliMapViewShopCellFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewShopCellFrame.h; sourceTree = "<group>"; };
+		351420F41EF10894005C3846 /* AliMapViewShopCellFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewShopCellFrame.m; sourceTree = "<group>"; };
+		351420F51EF10894005C3846 /* AliMapViewShopImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewShopImageView.h; sourceTree = "<group>"; };
+		351420F61EF10894005C3846 /* AliMapViewShopImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewShopImageView.m; sourceTree = "<group>"; };
+		351420F71EF10894005C3846 /* AliMapViewShopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewShopModel.h; sourceTree = "<group>"; };
+		351420F81EF10894005C3846 /* AliMapViewShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewShopModel.m; sourceTree = "<group>"; };
+		351420FA1EF10894005C3846 /* AliMapViewBusRouteSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewBusRouteSearchController.h; sourceTree = "<group>"; };
+		351420FB1EF10894005C3846 /* AliMapViewBusRouteSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewBusRouteSearchController.m; sourceTree = "<group>"; };
+		351420FC1EF10894005C3846 /* AliMapViewBusSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewBusSearchController.h; sourceTree = "<group>"; };
+		351420FD1EF10894005C3846 /* AliMapViewBusSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewBusSearchController.m; sourceTree = "<group>"; };
+		351420FE1EF10894005C3846 /* AliMapViewBusStopSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewBusStopSearchController.h; sourceTree = "<group>"; };
+		351420FF1EF10894005C3846 /* AliMapViewBusStopSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewBusStopSearchController.m; sourceTree = "<group>"; };
+		351421011EF10894005C3846 /* AliMapViewDistrictSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewDistrictSearchController.h; sourceTree = "<group>"; };
+		351421021EF10894005C3846 /* AliMapViewDistrictSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewDistrictSearchController.m; sourceTree = "<group>"; };
+		351421041EF10894005C3846 /* AliMapViewPOISearchByAroundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewPOISearchByAroundController.h; sourceTree = "<group>"; };
+		351421051EF10894005C3846 /* AliMapViewPOISearchByAroundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewPOISearchByAroundController.m; sourceTree = "<group>"; };
+		351421061EF10894005C3846 /* AliMapViewPOISearchByIDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewPOISearchByIDController.h; sourceTree = "<group>"; };
+		351421071EF10894005C3846 /* AliMapViewPOISearchByIDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewPOISearchByIDController.m; sourceTree = "<group>"; };
+		351421081EF10894005C3846 /* AliMapViewPOISearchByKeywordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewPOISearchByKeywordController.h; sourceTree = "<group>"; };
+		351421091EF10894005C3846 /* AliMapViewPOISearchByKeywordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewPOISearchByKeywordController.m; sourceTree = "<group>"; };
+		3514210A1EF10894005C3846 /* AliMapViewPOISearchByPolygonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewPOISearchByPolygonController.h; sourceTree = "<group>"; };
+		3514210B1EF10894005C3846 /* AliMapViewPOISearchByPolygonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewPOISearchByPolygonController.m; sourceTree = "<group>"; };
+		3514210C1EF10894005C3846 /* AliMapViewPOISearchByRouteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewPOISearchByRouteController.h; sourceTree = "<group>"; };
+		3514210D1EF10894005C3846 /* AliMapViewPOISearchByRouteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewPOISearchByRouteController.m; sourceTree = "<group>"; };
+		3514210E1EF10894005C3846 /* AliMapViewPOISearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewPOISearchController.h; sourceTree = "<group>"; };
+		3514210F1EF10894005C3846 /* AliMapViewPOISearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewPOISearchController.m; sourceTree = "<group>"; };
+		351421101EF10894005C3846 /* AliMapViewSearchByInputTipsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewSearchByInputTipsController.h; sourceTree = "<group>"; };
+		351421111EF10894005C3846 /* AliMapViewSearchByInputTipsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewSearchByInputTipsController.m; sourceTree = "<group>"; };
+		351421131EF10894005C3846 /* AliMapViewWeatherSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewWeatherSearchController.h; sourceTree = "<group>"; };
+		351421141EF10894005C3846 /* AliMapViewWeatherSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewWeatherSearchController.m; sourceTree = "<group>"; };
+		351421161EF10894005C3846 /* AliMapViewShowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliMapViewShowController.h; sourceTree = "<group>"; };
+		351421171EF10894005C3846 /* AliMapViewShowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliMapViewShowController.m; sourceTree = "<group>"; };
+		352954601EEFBF2F004B717F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		352954631EEFBF8E004B717F /* backItem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backItem@2x.png"; sourceTree = "<group>"; };
+		352954641EEFBF8E004B717F /* backItem@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backItem@3x.png"; sourceTree = "<group>"; };
+		352954651EEFBF8E004B717F /* userPosition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userPosition.png; sourceTree = "<group>"; };
+		352954661EEFBF8E004B717F /* userPosition@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "userPosition@2x.png"; sourceTree = "<group>"; };
+		352954671EEFBF8E004B717F /* navi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi@2x.png"; sourceTree = "<group>"; };
+		352954681EEFBF8E004B717F /* naviBackgroundHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naviBackgroundHighlighted.png; sourceTree = "<group>"; };
+		352954691EEFBF8E004B717F /* naviBackgroundNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naviBackgroundNormal.png; sourceTree = "<group>"; };
+		352954861EEFCB2C004B717F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		352954871EEFCB2C004B717F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		45E4DD885D2061B669AB5ED1 /* Pods-XLsn0wMapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wMapKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wMapKit/Pods-XLsn0wMapKit.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		350F524E1EEFB4D60090C356 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9DD152857B456E8C220715 /* libPods-XLsn0wMapKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		350F52481EEFB4D60090C356 = {
+			isa = PBXGroup;
+			children = (
+				350F52531EEFB4D60090C356 /* XLsn0wMapKit */,
+				350F52521EEFB4D60090C356 /* Products */,
+				3FB6EB5AF24FBF700D174EF9 /* Pods */,
+				ED6E3898700000467BA76069 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		350F52521EEFB4D60090C356 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				350F52511EEFB4D60090C356 /* XLsn0wMapKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		350F52531EEFB4D60090C356 /* XLsn0wMapKit */ = {
+			isa = PBXGroup;
+			children = (
+				351420761EF10894005C3846 /* MapUI */,
+				352954711EEFBFDE004B717F /* Navi */,
+				352954621EEFBF86004B717F /* Asset */,
+				352954611EEFBF79004B717F /* Application */,
+			);
+			path = XLsn0wMapKit;
+			sourceTree = "<group>";
+		};
+		350F52541EEFB4D60090C356 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				350F52551EEFB4D60090C356 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		351420761EF10894005C3846 /* MapUI */ = {
+			isa = PBXGroup;
+			children = (
+				351420B01EF10894005C3846 /* Resources */,
+				351420771EF10894005C3846 /* draw */,
+				351420941EF10894005C3846 /* navdrive */,
+				3514209D1EF10894005C3846 /* other */,
+				351420A31EF10894005C3846 /* position */,
+				351420DC1EF10894005C3846 /* route */,
+				351420E71EF10894005C3846 /* search */,
+				351421151EF10894005C3846 /* show */,
+			);
+			path = MapUI;
+			sourceTree = "<group>";
+		};
+		351420771EF10894005C3846 /* draw */ = {
+			isa = PBXGroup;
+			children = (
+				351420781EF10894005C3846 /* AliMapViewCustomAnnotationView.h */,
+				351420791EF10894005C3846 /* AliMapViewCustomAnnotationView.m */,
+				3514207A1EF10894005C3846 /* AliMapViewCustomCalloutView.h */,
+				3514207B1EF10894005C3846 /* AliMapViewCustomCalloutView.m */,
+				3514207C1EF10894005C3846 /* AliMapViewCustomPinAnnotationView.h */,
+				3514207D1EF10894005C3846 /* AliMapViewCustomPinAnnotationView.m */,
+				3514207E1EF10894005C3846 /* AliMapViewDrawController.h */,
+				3514207F1EF10894005C3846 /* AliMapViewDrawController.m */,
+				351420801EF10894005C3846 /* AliMapViewDrawCustomAnnotationController.h */,
+				351420811EF10894005C3846 /* AliMapViewDrawCustomAnnotationController.m */,
+				351420821EF10894005C3846 /* AliMapViewDrawPinController.h */,
+				351420831EF10894005C3846 /* AliMapViewDrawPinController.m */,
+				351420841EF10894005C3846 /* AliMapViewDrawPinCustomPointController.h */,
+				351420851EF10894005C3846 /* AliMapViewDrawPinCustomPointController.m */,
+				351420861EF10894005C3846 /* AliMapViewDrawPinDefalutPointController.h */,
+				351420871EF10894005C3846 /* AliMapViewDrawPinDefalutPointController.m */,
+				351420881EF10894005C3846 /* AliMapViewDrawPolylineController.h */,
+				351420891EF10894005C3846 /* AliMapViewDrawPolylineController.m */,
+				3514208A1EF10894005C3846 /* AliMapViewDrawSurfaceCircleController.h */,
+				3514208B1EF10894005C3846 /* AliMapViewDrawSurfaceCircleController.m */,
+				3514208C1EF10894005C3846 /* AliMapViewDrawSurfaceController.h */,
+				3514208D1EF10894005C3846 /* AliMapViewDrawSurfaceController.m */,
+				3514208E1EF10894005C3846 /* AliMapViewDrawSurfaceCustomlayController.h */,
+				3514208F1EF10894005C3846 /* AliMapViewDrawSurfaceCustomlayController.m */,
+				351420901EF10894005C3846 /* AliMapViewDrawSurfaceHeatController.h */,
+				351420911EF10894005C3846 /* AliMapViewDrawSurfaceHeatController.m */,
+				351420921EF10894005C3846 /* AliMapViewDrawSurfaceOverlayController.h */,
+				351420931EF10894005C3846 /* AliMapViewDrawSurfaceOverlayController.m */,
+			);
+			path = draw;
+			sourceTree = "<group>";
+		};
+		351420941EF10894005C3846 /* navdrive */ = {
+			isa = PBXGroup;
+			children = (
+				351420951EF10894005C3846 /* AliMapViewCustomNavDeriveController.h */,
+				351420961EF10894005C3846 /* AliMapViewCustomNavDeriveController.m */,
+				351420971EF10894005C3846 /* AliMapViewNavController.h */,
+				351420981EF10894005C3846 /* AliMapViewNavController.m */,
+				351420991EF10894005C3846 /* AliMapViewSystemNaviDriveController.h */,
+				3514209A1EF10894005C3846 /* AliMapViewSystemNaviDriveController.m */,
+				3514209B1EF10894005C3846 /* UIImage+Extension.h */,
+				3514209C1EF10894005C3846 /* UIImage+Extension.m */,
+			);
+			path = navdrive;
+			sourceTree = "<group>";
+		};
+		3514209D1EF10894005C3846 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				351420A11EF10894005C3846 /* AliMapRootViewController.h */,
+				351420A21EF10894005C3846 /* AliMapRootViewController.m */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		351420A31EF10894005C3846 /* position */ = {
+			isa = PBXGroup;
+			children = (
+				351420A41EF10894005C3846 /* AliMapViewBackgroundPositionController.h */,
+				351420A51EF10894005C3846 /* AliMapViewBackgroundPositionController.m */,
+				351420A61EF10894005C3846 /* AliMapViewContinuePositionController.h */,
+				351420A71EF10894005C3846 /* AliMapViewContinuePositionController.m */,
+				351420A81EF10894005C3846 /* AliMapViewLocationDataAvailableController.h */,
+				351420A91EF10894005C3846 /* AliMapViewLocationDataAvailableController.m */,
+				351420AA1EF10894005C3846 /* AliMapViewMonitoringRegionController.h */,
+				351420AB1EF10894005C3846 /* AliMapViewMonitoringRegionController.m */,
+				351420AC1EF10894005C3846 /* AliMapViewPositionController.h */,
+				351420AD1EF10894005C3846 /* AliMapViewPositionController.m */,
+				351420AE1EF10894005C3846 /* AliMapViewSinglePositionController.h */,
+				351420AF1EF10894005C3846 /* AliMapViewSinglePositionController.m */,
+			);
+			path = position;
+			sourceTree = "<group>";
+		};
+		351420B01EF10894005C3846 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				351420B11EF10894005C3846 /* animatedCar_1.png */,
+				351420B21EF10894005C3846 /* animatedCar_2.png */,
+				351420B31EF10894005C3846 /* animatedCar_3.png */,
+				351420B41EF10894005C3846 /* animatedCar_4.png */,
+				351420B51EF10894005C3846 /* animatedTrain_1.png */,
+				351420B61EF10894005C3846 /* animatedTrain_2.png */,
+				351420B71EF10894005C3846 /* animatedTrain_3.png */,
+				351420B81EF10894005C3846 /* animatedTrain_4.png */,
+				351420B91EF10894005C3846 /* arrow_right.png */,
+				351420BA1EF10894005C3846 /* arrow_right@2x.png */,
+				351420BB1EF10894005C3846 /* bus@2x.png */,
+				351420BC1EF10894005C3846 /* car@2x.png */,
+				351420BD1EF10894005C3846 /* custom@2x.png */,
+				351420BE1EF10894005C3846 /* custtexture.png */,
+				351420BF1EF10894005C3846 /* custtexture_bad.png */,
+				351420C01EF10894005C3846 /* custtexture_green.png */,
+				351420C11EF10894005C3846 /* custtexture_no.png */,
+				351420C21EF10894005C3846 /* custtexture_serious.png */,
+				351420C31EF10894005C3846 /* custtexture_slow.png */,
+				351420C41EF10894005C3846 /* endPoint.png */,
+				351420C51EF10894005C3846 /* endPoint@2x.png */,
+				351420C61EF10894005C3846 /* GWF.png */,
+				351420C71EF10894005C3846 /* heatMapData.json */,
+				351420C81EF10894005C3846 /* hema.png */,
+				351420C91EF10894005C3846 /* hema@2x.png */,
+				351420CA1EF10894005C3846 /* icon-72.png */,
+				351420CB1EF10894005C3846 /* icon-72@2x.png */,
+				351420CC1EF10894005C3846 /* icon.png */,
+				351420CD1EF10894005C3846 /* icon@2x.png */,
+				351420CE1EF10894005C3846 /* locate@2x.png */,
+				351420CF1EF10894005C3846 /* Location.plist */,
+				351420D01EF10894005C3846 /* location@2x.png */,
+				351420D11EF10894005C3846 /* man@2x.png */,
+				351420D21EF10894005C3846 /* navi@2x.png */,
+				351420D31EF10894005C3846 /* naviBackgroundHighlighted.png */,
+				351420D41EF10894005C3846 /* naviBackgroundNormal.png */,
+				351420D51EF10894005C3846 /* railway_station@2x.png */,
+				351420D61EF10894005C3846 /* search@2x.png */,
+				351420D71EF10894005C3846 /* startPoint.png */,
+				351420D81EF10894005C3846 /* startPoint@2x.png */,
+				351420D91EF10894005C3846 /* tiananmen@2x.png */,
+				351420DA1EF10894005C3846 /* userPosition.png */,
+				351420DB1EF10894005C3846 /* userPosition@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		351420DC1EF10894005C3846 /* route */ = {
+			isa = PBXGroup;
+			children = (
+				351420DD1EF10894005C3846 /* AliMapViewBikeRouteController.h */,
+				351420DE1EF10894005C3846 /* AliMapViewBikeRouteController.m */,
+				351420DF1EF10894005C3846 /* AliMapViewBusRouteController.h */,
+				351420E01EF10894005C3846 /* AliMapViewBusRouteController.m */,
+				351420E11EF10894005C3846 /* AliMapViewCarRouteController.h */,
+				351420E21EF10894005C3846 /* AliMapViewCarRouteController.m */,
+				351420E31EF10894005C3846 /* AliMapViewRouteController.h */,
+				351420E41EF10894005C3846 /* AliMapViewRouteController.m */,
+				351420E51EF10894005C3846 /* AliMapViewWalkRouteController.h */,
+				351420E61EF10894005C3846 /* AliMapViewWalkRouteController.m */,
+			);
+			path = route;
+			sourceTree = "<group>";
+		};
+		351420E71EF10894005C3846 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				351420E81EF10894005C3846 /* Address */,
+				351420EF1EF10894005C3846 /* AliMapViewSearchController.h */,
+				351420F01EF10894005C3846 /* AliMapViewSearchController.m */,
+				351420F11EF10894005C3846 /* AliMapViewShopCell.h */,
+				351420F21EF10894005C3846 /* AliMapViewShopCell.m */,
+				351420F31EF10894005C3846 /* AliMapViewShopCellFrame.h */,
+				351420F41EF10894005C3846 /* AliMapViewShopCellFrame.m */,
+				351420F51EF10894005C3846 /* AliMapViewShopImageView.h */,
+				351420F61EF10894005C3846 /* AliMapViewShopImageView.m */,
+				351420F71EF10894005C3846 /* AliMapViewShopModel.h */,
+				351420F81EF10894005C3846 /* AliMapViewShopModel.m */,
+				351420F91EF10894005C3846 /* Bus */,
+				351421001EF10894005C3846 /* District */,
+				351421031EF10894005C3846 /* POI */,
+				351421121EF10894005C3846 /* Weather */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		351420E81EF10894005C3846 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				351420E91EF10894005C3846 /* AliMapViewAddressSearchController.h */,
+				351420EA1EF10894005C3846 /* AliMapViewAddressSearchController.m */,
+				351420EB1EF10894005C3846 /* AliMapViewGeocodeSearchController.h */,
+				351420EC1EF10894005C3846 /* AliMapViewGeocodeSearchController.m */,
+				351420ED1EF10894005C3846 /* AliMapViewReGeocodeSearchController.h */,
+				351420EE1EF10894005C3846 /* AliMapViewReGeocodeSearchController.m */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		351420F91EF10894005C3846 /* Bus */ = {
+			isa = PBXGroup;
+			children = (
+				351420FA1EF10894005C3846 /* AliMapViewBusRouteSearchController.h */,
+				351420FB1EF10894005C3846 /* AliMapViewBusRouteSearchController.m */,
+				351420FC1EF10894005C3846 /* AliMapViewBusSearchController.h */,
+				351420FD1EF10894005C3846 /* AliMapViewBusSearchController.m */,
+				351420FE1EF10894005C3846 /* AliMapViewBusStopSearchController.h */,
+				351420FF1EF10894005C3846 /* AliMapViewBusStopSearchController.m */,
+			);
+			path = Bus;
+			sourceTree = "<group>";
+		};
+		351421001EF10894005C3846 /* District */ = {
+			isa = PBXGroup;
+			children = (
+				351421011EF10894005C3846 /* AliMapViewDistrictSearchController.h */,
+				351421021EF10894005C3846 /* AliMapViewDistrictSearchController.m */,
+			);
+			path = District;
+			sourceTree = "<group>";
+		};
+		351421031EF10894005C3846 /* POI */ = {
+			isa = PBXGroup;
+			children = (
+				351421041EF10894005C3846 /* AliMapViewPOISearchByAroundController.h */,
+				351421051EF10894005C3846 /* AliMapViewPOISearchByAroundController.m */,
+				351421061EF10894005C3846 /* AliMapViewPOISearchByIDController.h */,
+				351421071EF10894005C3846 /* AliMapViewPOISearchByIDController.m */,
+				351421081EF10894005C3846 /* AliMapViewPOISearchByKeywordController.h */,
+				351421091EF10894005C3846 /* AliMapViewPOISearchByKeywordController.m */,
+				3514210A1EF10894005C3846 /* AliMapViewPOISearchByPolygonController.h */,
+				3514210B1EF10894005C3846 /* AliMapViewPOISearchByPolygonController.m */,
+				3514210C1EF10894005C3846 /* AliMapViewPOISearchByRouteController.h */,
+				3514210D1EF10894005C3846 /* AliMapViewPOISearchByRouteController.m */,
+				3514210E1EF10894005C3846 /* AliMapViewPOISearchController.h */,
+				3514210F1EF10894005C3846 /* AliMapViewPOISearchController.m */,
+				351421101EF10894005C3846 /* AliMapViewSearchByInputTipsController.h */,
+				351421111EF10894005C3846 /* AliMapViewSearchByInputTipsController.m */,
+			);
+			path = POI;
+			sourceTree = "<group>";
+		};
+		351421121EF10894005C3846 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				351421131EF10894005C3846 /* AliMapViewWeatherSearchController.h */,
+				351421141EF10894005C3846 /* AliMapViewWeatherSearchController.m */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		351421151EF10894005C3846 /* show */ = {
+			isa = PBXGroup;
+			children = (
+				351421161EF10894005C3846 /* AliMapViewShowController.h */,
+				351421171EF10894005C3846 /* AliMapViewShowController.m */,
+			);
+			path = show;
+			sourceTree = "<group>";
+		};
+		352954611EEFBF79004B717F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				350F52571EEFB4D60090C356 /* AppDelegate.h */,
+				350F52581EEFB4D60090C356 /* AppDelegate.m */,
+				352954601EEFBF2F004B717F /* PrefixHeader.pch */,
+				350F52601EEFB4D60090C356 /* Assets.xcassets */,
+				350F52651EEFB4D60090C356 /* Info.plist */,
+				350F52541EEFB4D60090C356 /* Supporting Files */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		352954621EEFBF86004B717F /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				352954631EEFBF8E004B717F /* backItem@2x.png */,
+				352954641EEFBF8E004B717F /* backItem@3x.png */,
+				352954651EEFBF8E004B717F /* userPosition.png */,
+				352954661EEFBF8E004B717F /* userPosition@2x.png */,
+				352954671EEFBF8E004B717F /* navi@2x.png */,
+				352954681EEFBF8E004B717F /* naviBackgroundHighlighted.png */,
+				352954691EEFBF8E004B717F /* naviBackgroundNormal.png */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		352954711EEFBFDE004B717F /* Navi */ = {
+			isa = PBXGroup;
+			children = (
+				352954861EEFCB2C004B717F /* MainViewController.h */,
+				352954871EEFCB2C004B717F /* MainViewController.m */,
+			);
+			path = Navi;
+			sourceTree = "<group>";
+		};
+		3FB6EB5AF24FBF700D174EF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45E4DD885D2061B669AB5ED1 /* Pods-XLsn0wMapKit.debug.xcconfig */,
+				1A5F67161DE1F162C06E6447 /* Pods-XLsn0wMapKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED6E3898700000467BA76069 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00F9A3ED34B2A3C23149C2CD /* libPods-XLsn0wMapKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		350F52501EEFB4D60090C356 /* XLsn0wMapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 350F52681EEFB4D60090C356 /* Build configuration list for PBXNativeTarget "XLsn0wMapKit" */;
+			buildPhases = (
+				A589F0697BAD0BF301A08790 /* [CP] Check Pods Manifest.lock */,
+				350F524D1EEFB4D60090C356 /* Sources */,
+				350F524E1EEFB4D60090C356 /* Frameworks */,
+				350F524F1EEFB4D60090C356 /* Resources */,
+				161948E3F8DA504412E7B65A /* [CP] Embed Pods Frameworks */,
+				6CA7BE10DAF734A870A9589A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XLsn0wMapKit;
+			productName = XLsn0wMapKit;
+			productReference = 350F52511EEFB4D60090C356 /* XLsn0wMapKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		350F52491EEFB4D60090C356 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = XLsn0w;
+				TargetAttributes = {
+					350F52501EEFB4D60090C356 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7L4YK5W6WP;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 350F524C1EEFB4D60090C356 /* Build configuration list for PBXProject "XLsn0wMapKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 350F52481EEFB4D60090C356;
+			productRefGroup = 350F52521EEFB4D60090C356 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				350F52501EEFB4D60090C356 /* XLsn0wMapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		350F524F1EEFB4D60090C356 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351421571EF10894005C3846 /* search@2x.png in Resources */,
+				3529546D1EEFBF8E004B717F /* userPosition@2x.png in Resources */,
+				3529546F1EEFBF8E004B717F /* naviBackgroundHighlighted.png in Resources */,
+				351421531EF10894005C3846 /* navi@2x.png in Resources */,
+				3514214E1EF10894005C3846 /* icon@2x.png in Resources */,
+				351421441EF10894005C3846 /* custtexture_slow.png in Resources */,
+				351421411EF10894005C3846 /* custtexture_green.png in Resources */,
+				351421551EF10894005C3846 /* naviBackgroundNormal.png in Resources */,
+				351421591EF10894005C3846 /* startPoint@2x.png in Resources */,
+				3514215C1EF10894005C3846 /* userPosition@2x.png in Resources */,
+				351421451EF10894005C3846 /* endPoint.png in Resources */,
+				351421521EF10894005C3846 /* man@2x.png in Resources */,
+				3514214C1EF10894005C3846 /* icon-72@2x.png in Resources */,
+				351421431EF10894005C3846 /* custtexture_serious.png in Resources */,
+				352954701EEFBF8E004B717F /* naviBackgroundNormal.png in Resources */,
+				351421511EF10894005C3846 /* location@2x.png in Resources */,
+				351421341EF10894005C3846 /* animatedCar_3.png in Resources */,
+				3529546A1EEFBF8E004B717F /* backItem@2x.png in Resources */,
+				351421321EF10894005C3846 /* animatedCar_1.png in Resources */,
+				3514214A1EF10894005C3846 /* hema@2x.png in Resources */,
+				3514215B1EF10894005C3846 /* userPosition.png in Resources */,
+				3514214D1EF10894005C3846 /* icon.png in Resources */,
+				351421461EF10894005C3846 /* endPoint@2x.png in Resources */,
+				3514215A1EF10894005C3846 /* tiananmen@2x.png in Resources */,
+				351421351EF10894005C3846 /* animatedCar_4.png in Resources */,
+				351421491EF10894005C3846 /* hema.png in Resources */,
+				3529546C1EEFBF8E004B717F /* userPosition.png in Resources */,
+				351421501EF10894005C3846 /* Location.plist in Resources */,
+				351421371EF10894005C3846 /* animatedTrain_2.png in Resources */,
+				351421561EF10894005C3846 /* railway_station@2x.png in Resources */,
+				3514213E1EF10894005C3846 /* custom@2x.png in Resources */,
+				3514213F1EF10894005C3846 /* custtexture.png in Resources */,
+				351421331EF10894005C3846 /* animatedCar_2.png in Resources */,
+				3514213C1EF10894005C3846 /* bus@2x.png in Resources */,
+				351421541EF10894005C3846 /* naviBackgroundHighlighted.png in Resources */,
+				351421581EF10894005C3846 /* startPoint.png in Resources */,
+				350F52611EEFB4D60090C356 /* Assets.xcassets in Resources */,
+				351421421EF10894005C3846 /* custtexture_no.png in Resources */,
+				3529546B1EEFBF8E004B717F /* backItem@3x.png in Resources */,
+				3529546E1EEFBF8E004B717F /* navi@2x.png in Resources */,
+				351421391EF10894005C3846 /* animatedTrain_4.png in Resources */,
+				3514213B1EF10894005C3846 /* arrow_right@2x.png in Resources */,
+				351421481EF10894005C3846 /* heatMapData.json in Resources */,
+				3514214B1EF10894005C3846 /* icon-72.png in Resources */,
+				351421401EF10894005C3846 /* custtexture_bad.png in Resources */,
+				3514214F1EF10894005C3846 /* locate@2x.png in Resources */,
+				351421381EF10894005C3846 /* animatedTrain_3.png in Resources */,
+				3514213A1EF10894005C3846 /* arrow_right.png in Resources */,
+				351421361EF10894005C3846 /* animatedTrain_1.png in Resources */,
+				351421471EF10894005C3846 /* GWF.png in Resources */,
+				3514213D1EF10894005C3846 /* car@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		161948E3F8DA504412E7B65A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XLsn0wMapKit/Pods-XLsn0wMapKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CA7BE10DAF734A870A9589A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XLsn0wMapKit/Pods-XLsn0wMapKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A589F0697BAD0BF301A08790 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		350F524D1EEFB4D60090C356 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351421661EF10894005C3846 /* AliMapViewShopCell.m in Sources */,
+				351421631EF10894005C3846 /* AliMapViewGeocodeSearchController.m in Sources */,
+				3514216B1EF10894005C3846 /* AliMapViewBusSearchController.m in Sources */,
+				351421691EF10894005C3846 /* AliMapViewShopModel.m in Sources */,
+				351421711EF10894005C3846 /* AliMapViewPOISearchByPolygonController.m in Sources */,
+				3514215F1EF10894005C3846 /* AliMapViewCarRouteController.m in Sources */,
+				351421231EF10894005C3846 /* AliMapViewDrawSurfaceCustomlayController.m in Sources */,
+				3514211A1EF10894005C3846 /* AliMapViewCustomPinAnnotationView.m in Sources */,
+				351421721EF10894005C3846 /* AliMapViewPOISearchByRouteController.m in Sources */,
+				351421761EF10894005C3846 /* AliMapViewShowController.m in Sources */,
+				3514216C1EF10894005C3846 /* AliMapViewBusStopSearchController.m in Sources */,
+				3514211E1EF10894005C3846 /* AliMapViewDrawPinCustomPointController.m in Sources */,
+				351421261EF10894005C3846 /* AliMapViewCustomNavDeriveController.m in Sources */,
+				3514212B1EF10894005C3846 /* AliMapRootViewController.m in Sources */,
+				3514215E1EF10894005C3846 /* AliMapViewBusRouteController.m in Sources */,
+				351421251EF10894005C3846 /* AliMapViewDrawSurfaceOverlayController.m in Sources */,
+				3514211F1EF10894005C3846 /* AliMapViewDrawPinDefalutPointController.m in Sources */,
+				351421281EF10894005C3846 /* AliMapViewSystemNaviDriveController.m in Sources */,
+				350F52591EEFB4D60090C356 /* AppDelegate.m in Sources */,
+				3514212F1EF10894005C3846 /* AliMapViewMonitoringRegionController.m in Sources */,
+				351421701EF10894005C3846 /* AliMapViewPOISearchByKeywordController.m in Sources */,
+				3514212C1EF10894005C3846 /* AliMapViewBackgroundPositionController.m in Sources */,
+				351421291EF10894005C3846 /* UIImage+Extension.m in Sources */,
+				351421651EF10894005C3846 /* AliMapViewSearchController.m in Sources */,
+				3514216D1EF10894005C3846 /* AliMapViewDistrictSearchController.m in Sources */,
+				3514212E1EF10894005C3846 /* AliMapViewLocationDataAvailableController.m in Sources */,
+				351421611EF10894005C3846 /* AliMapViewWalkRouteController.m in Sources */,
+				351421731EF10894005C3846 /* AliMapViewPOISearchController.m in Sources */,
+				351421301EF10894005C3846 /* AliMapViewPositionController.m in Sources */,
+				351421241EF10894005C3846 /* AliMapViewDrawSurfaceHeatController.m in Sources */,
+				3514215D1EF10894005C3846 /* AliMapViewBikeRouteController.m in Sources */,
+				351421621EF10894005C3846 /* AliMapViewAddressSearchController.m in Sources */,
+				351421601EF10894005C3846 /* AliMapViewRouteController.m in Sources */,
+				351421311EF10894005C3846 /* AliMapViewSinglePositionController.m in Sources */,
+				350F52561EEFB4D60090C356 /* main.m in Sources */,
+				3514216A1EF10894005C3846 /* AliMapViewBusRouteSearchController.m in Sources */,
+				351421641EF10894005C3846 /* AliMapViewReGeocodeSearchController.m in Sources */,
+				3514211C1EF10894005C3846 /* AliMapViewDrawCustomAnnotationController.m in Sources */,
+				351421191EF10894005C3846 /* AliMapViewCustomCalloutView.m in Sources */,
+				351421271EF10894005C3846 /* AliMapViewNavController.m in Sources */,
+				351421211EF10894005C3846 /* AliMapViewDrawSurfaceCircleController.m in Sources */,
+				352954881EEFCB2C004B717F /* MainViewController.m in Sources */,
+				3514216E1EF10894005C3846 /* AliMapViewPOISearchByAroundController.m in Sources */,
+				351421671EF10894005C3846 /* AliMapViewShopCellFrame.m in Sources */,
+				3514216F1EF10894005C3846 /* AliMapViewPOISearchByIDController.m in Sources */,
+				351421681EF10894005C3846 /* AliMapViewShopImageView.m in Sources */,
+				3514211B1EF10894005C3846 /* AliMapViewDrawController.m in Sources */,
+				351421751EF10894005C3846 /* AliMapViewWeatherSearchController.m in Sources */,
+				351421201EF10894005C3846 /* AliMapViewDrawPolylineController.m in Sources */,
+				3514212D1EF10894005C3846 /* AliMapViewContinuePositionController.m in Sources */,
+				351421221EF10894005C3846 /* AliMapViewDrawSurfaceController.m in Sources */,
+				3514211D1EF10894005C3846 /* AliMapViewDrawPinController.m in Sources */,
+				351421741EF10894005C3846 /* AliMapViewSearchByInputTipsController.m in Sources */,
+				351421181EF10894005C3846 /* AliMapViewCustomAnnotationView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		350F52661EEFB4D60090C356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		350F52671EEFB4D60090C356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		350F52691EEFB4D60090C356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45E4DD885D2061B669AB5ED1 /* Pods-XLsn0wMapKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7L4YK5W6WP;
+				GCC_PREFIX_HEADER = XLsn0wMapKit/PrefixHeader.pch;
+				INFOPLIST_FILE = XLsn0wMapKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlsn0w.XLsn0wMapKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		350F526A1EEFB4D60090C356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A5F67161DE1F162C06E6447 /* Pods-XLsn0wMapKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7L4YK5W6WP;
+				GCC_PREFIX_HEADER = XLsn0wMapKit/PrefixHeader.pch;
+				INFOPLIST_FILE = XLsn0wMapKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlsn0w.XLsn0wMapKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		350F524C1EEFB4D60090C356 /* Build configuration list for PBXProject "XLsn0wMapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350F52661EEFB4D60090C356 /* Debug */,
+				350F52671EEFB4D60090C356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		350F52681EEFB4D60090C356 /* Build configuration list for PBXNativeTarget "XLsn0wMapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350F52691EEFB4D60090C356 /* Debug */,
+				350F526A1EEFB4D60090C356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 350F52491EEFB4D60090C356 /* Project object */;
+}

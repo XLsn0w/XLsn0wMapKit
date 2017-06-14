@@ -1,0 +1,1 @@
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSURLConnection/NSURLConnection+JKSelfSigned.h

@@ -1,0 +1,73 @@
+//
+//  PrefixHeader.pch
+//  XLsn0wMapKit
+//
+//  Created by XLsn0w on 2017/6/13.
+//  Copyright © 2017年 XLsn0w. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import <XLsn0wKit_objc.h>
+#import <Masonry.h>
+#import <AFNetworking.h>
+#import "UIImageView+WebCache.h"
+
+
+
+
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+
+#import "iflyMSC/IFlySpeechSynthesizer.h"
+#import "iflyMSC/IFlySpeechSynthesizerDelegate.h"
+#import "iflyMSC/IFlySpeechConstant.h"
+#import "iflyMSC/IFlySpeechUtility.h"
+#import "iflyMSC/IFlySetting.h"
+#import <AMapNaviKit/AMapNaviKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+
+
+
+
+#define SCREEN_HEGHT  [UIScreen mainScreen].bounds.size.height
+#define Cell_Border   10
+
+
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <MAMapKit/MAMapKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <Masonry.h>
+#import <AMapNaviKit/AMapNaviKit.h>
+
+
+
+#define AMapAPIKey @"f5baa9e5ca5dd3a940bd05da68bdac1c"
+
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define Dis_Navi 64
+#define FontSize [UIFont systemFontOfSize:17]
+#define Cell_Border 10
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+
+//在 Info.plist 文件中增加定位权限配置，如下图示：
+//
+//值得注意的是，定位权限有三种，您可根据需求进行选择。
+//Privacy - Location Always Usage Description
+//始终允许访问位置信息
+//Privacy - Location Usage Description
+//永不允许访问位置信息
+//Privacy - Location When In Use Usage Description
+//使用应用期间允许访问位置信息
