@@ -28,6 +28,8 @@
     self.window.rootViewController  = [[UINavigationController alloc] initWithRootViewController:vc];
 
     
+    [self downloadZip];
+    
     
     [AMapServices sharedServices].apiKey = AMapAPIKey;
 //    
@@ -50,6 +52,41 @@
 //    [[IFlySpeechSynthesizer sharedInstance] setParameter:nil forKey:[IFlySpeechConstant TTS_AUDIO_PATH]];
 //    
     return YES;
+}
+
+- (void)downloadZip {
+    //samecity_ios.zip所在路径
+    NSString *downloadZipPath = [NSHomeDirectory() stringByAppendingString:@"/Documents/samecity_ios.zip"];
+    //之前www文件夹所在路径
+    NSString *wwwExistsPath = [NSHomeDirectory() stringByAppendingString:@"/Documents/CityPark/www"];
+    
+
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:wwwExistsPath] == YES) {//之前有www文件夹 就移除之前的www文件夹
+        NSLog(@"已经存在www文件夹");
+        [[NSFileManager defaultManager] removeItemAtPath:wwwExistsPath error:nil];//就移除之前的www文件夹
+        NSLog(@"成功移除之前的www文件夹");
+        
+        
+        [XLsn0wNetworkManager downloadFileWithURL:@"http://cloud.lgcool.com/CityPark/resourceDownload/samecity_ios.zip"
+                                    requestMethod:@"GET"
+                                       parameters:nil
+                                         savePath:downloadZipPath
+                                  downloadSuccess:^(NSURLResponse *response, NSURL *filePath) {
+                                      
+                                      
+                                      
+                                  } downloadFailure:^(NSError *error) {
+                                      
+                                      
+                                  } downloadProgress:^(NSProgress *downloadProgress) {
+                                      
+                                      
+                                  }];
+        
+    } else {
+        NSLog(@"Documents/CityPark路径下, 不存在www文件夹");
+    }
 }
 
 
