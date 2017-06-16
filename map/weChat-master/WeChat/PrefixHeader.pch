@@ -1,0 +1,50 @@
+//
+//  PrefixHeader.pch
+//  XMPP框架
+//
+//  Created by 李莎鑫 on 2017/1/1.
+//  Copyright © 2017年 李莎鑫. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+#ifdef __OBJC__
+
+
+
+#pragma mark - 头文件 ----------------------------------------------------
+
+#import  <UIKit/UIKit.h>
+#import  <Foundation/Foundation.h>
+
+
+#import "WeChatCategory.h"
+#import "XMPPTools.h"
+#import "PersionModel.h"
+
+
+
+#pragma mark - 宏定义 ----------------------------------------------------
+
+
+
+#define Localized(key)  [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"Language"]
+
+
+#pragma mark - 调试用参数宏 ------------------------------------------------
+#ifdef DEBUG
+#define DebugLog(format, ...)  NSLog(format, ##__VA_ARGS__)
+#else
+#define DebugLog(format, ...)
+#endif
+
+
+#endif
+
+#endif /* PrefixHeader_pch */

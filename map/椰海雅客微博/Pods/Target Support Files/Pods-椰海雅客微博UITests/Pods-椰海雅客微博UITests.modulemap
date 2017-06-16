@@ -1,0 +1,6 @@
+framework module Pods_______UITests {
+  umbrella header "Pods-椰海雅客微博UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

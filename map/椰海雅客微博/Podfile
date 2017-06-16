@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+target '椰海雅客微博' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for 椰海雅客微博
+pod 'LSXPropertyTool', '~>0.0.9' #个人写的属性生产器，字典转模型工具
+
+pod 'QorumLogs'           # 带颜色的log输出 Swift 3.0
+pod 'SnapKit', '~> 3.2.0' # Swift版本的AutoLayout 类似于OC 下的Masonry
+#pod 'ReactiveCocoa', '~> 5.0.1' #Swift3.0版本的RAC
+pod 'AFNetworking', '~> 3.1.0'  #OC 版本
+pod 'Alamofire', '~> 4.4.0' #Swift 版本AFNetworking
+pod 'SVProgressHUD', '~> 2.1.2' #目前只有OC 版本
+pod 'SDWebImage', '~> 4.0.0'    #SDWebImage
+#pod 'R.swift'        #swift 下一款资源管理工具
+
+
+
+  target '椰海雅客微博Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target '椰海雅客微博UITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

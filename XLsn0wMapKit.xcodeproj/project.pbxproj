@@ -112,6 +112,10 @@
 		3529546F1EEFBF8E004B717F /* naviBackgroundHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 352954681EEFBF8E004B717F /* naviBackgroundHighlighted.png */; };
 		352954701EEFBF8E004B717F /* naviBackgroundNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 352954691EEFBF8E004B717F /* naviBackgroundNormal.png */; };
 		352954881EEFCB2C004B717F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352954871EEFCB2C004B717F /* MainViewController.m */; };
+		353A48251EF36E370069BC68 /* WKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A48241EF36E370069BC68 /* WKWebViewViewController.m */; };
+		353A48281EF36E390069BC68 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A48271EF36E390069BC68 /* AFNetworkingViewController.m */; };
+		359C552B1EF23C3C00DA5558 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359C552A1EF23C3C00DA5558 /* Images.xcassets */; };
+		359C55501EF23CAE00DA5558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359C554F1EF23CAE00DA5558 /* LaunchScreen.storyboard */; };
 		BC9DD152857B456E8C220715 /* libPods-XLsn0wMapKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F9A3ED34B2A3C23149C2CD /* libPods-XLsn0wMapKit.a */; };
 /* End PBXBuildFile section */
 
@@ -279,6 +283,12 @@
 		352954691EEFBF8E004B717F /* naviBackgroundNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naviBackgroundNormal.png; sourceTree = "<group>"; };
 		352954861EEFCB2C004B717F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		352954871EEFCB2C004B717F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		353A48231EF36E370069BC68 /* WKWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewViewController.h; sourceTree = "<group>"; };
+		353A48241EF36E370069BC68 /* WKWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewViewController.m; sourceTree = "<group>"; };
+		353A48261EF36E390069BC68 /* AFNetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
+		353A48271EF36E390069BC68 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
+		359C552A1EF23C3C00DA5558 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		359C554F1EF23CAE00DA5558 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45E4DD885D2061B669AB5ED1 /* Pods-XLsn0wMapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wMapKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wMapKit/Pods-XLsn0wMapKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -319,6 +329,7 @@
 				352954711EEFBFDE004B717F /* Navi */,
 				352954621EEFBF86004B717F /* Asset */,
 				352954611EEFBF79004B717F /* Application */,
+				359C552A1EF23C3C00DA5558 /* Images.xcassets */,
 			);
 			path = XLsn0wMapKit;
 			sourceTree = "<group>";
@@ -593,6 +604,7 @@
 				350F52571EEFB4D60090C356 /* AppDelegate.h */,
 				350F52581EEFB4D60090C356 /* AppDelegate.m */,
 				352954601EEFBF2F004B717F /* PrefixHeader.pch */,
+				359C554F1EF23CAE00DA5558 /* LaunchScreen.storyboard */,
 				350F52601EEFB4D60090C356 /* Assets.xcassets */,
 				350F52651EEFB4D60090C356 /* Info.plist */,
 				350F52541EEFB4D60090C356 /* Supporting Files */,
@@ -617,6 +629,10 @@
 		352954711EEFBFDE004B717F /* Navi */ = {
 			isa = PBXGroup;
 			children = (
+				353A48231EF36E370069BC68 /* WKWebViewViewController.h */,
+				353A48241EF36E370069BC68 /* WKWebViewViewController.m */,
+				353A48261EF36E390069BC68 /* AFNetworkingViewController.h */,
+				353A48271EF36E390069BC68 /* AFNetworkingViewController.m */,
 				352954861EEFCB2C004B717F /* MainViewController.h */,
 				352954871EEFCB2C004B717F /* MainViewController.m */,
 			);
@@ -731,6 +747,7 @@
 				3529546C1EEFBF8E004B717F /* userPosition.png in Resources */,
 				351421501EF10894005C3846 /* Location.plist in Resources */,
 				351421371EF10894005C3846 /* animatedTrain_2.png in Resources */,
+				359C552B1EF23C3C00DA5558 /* Images.xcassets in Resources */,
 				351421561EF10894005C3846 /* railway_station@2x.png in Resources */,
 				3514213E1EF10894005C3846 /* custom@2x.png in Resources */,
 				3514213F1EF10894005C3846 /* custtexture.png in Resources */,
@@ -739,6 +756,7 @@
 				351421541EF10894005C3846 /* naviBackgroundHighlighted.png in Resources */,
 				351421581EF10894005C3846 /* startPoint.png in Resources */,
 				350F52611EEFB4D60090C356 /* Assets.xcassets in Resources */,
+				359C55501EF23CAE00DA5558 /* LaunchScreen.storyboard in Resources */,
 				351421421EF10894005C3846 /* custtexture_no.png in Resources */,
 				3529546B1EEFBF8E004B717F /* backItem@3x.png in Resources */,
 				3529546E1EEFBF8E004B717F /* navi@2x.png in Resources */,
@@ -819,6 +837,7 @@
 				3514215F1EF10894005C3846 /* AliMapViewCarRouteController.m in Sources */,
 				351421231EF10894005C3846 /* AliMapViewDrawSurfaceCustomlayController.m in Sources */,
 				3514211A1EF10894005C3846 /* AliMapViewCustomPinAnnotationView.m in Sources */,
+				353A48251EF36E370069BC68 /* WKWebViewViewController.m in Sources */,
 				351421721EF10894005C3846 /* AliMapViewPOISearchByRouteController.m in Sources */,
 				351421761EF10894005C3846 /* AliMapViewShowController.m in Sources */,
 				3514216C1EF10894005C3846 /* AliMapViewBusStopSearchController.m in Sources */,
@@ -839,6 +858,7 @@
 				3514212E1EF10894005C3846 /* AliMapViewLocationDataAvailableController.m in Sources */,
 				351421611EF10894005C3846 /* AliMapViewWalkRouteController.m in Sources */,
 				351421731EF10894005C3846 /* AliMapViewPOISearchController.m in Sources */,
+				353A48281EF36E390069BC68 /* AFNetworkingViewController.m in Sources */,
 				351421301EF10894005C3846 /* AliMapViewPositionController.m in Sources */,
 				351421241EF10894005C3846 /* AliMapViewDrawSurfaceHeatController.m in Sources */,
 				3514215D1EF10894005C3846 /* AliMapViewBikeRouteController.m in Sources */,

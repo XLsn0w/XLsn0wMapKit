@@ -1,0 +1,17 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'XLsn0wMapKit' do
+  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for naviDemo
+pod 'AMapSearch'
+pod 'AMapNavi'
+pod 'iflyMSC'
+pod 'AMap3DMap'
+
+
+
+
+end

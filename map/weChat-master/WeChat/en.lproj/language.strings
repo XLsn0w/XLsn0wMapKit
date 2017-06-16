@@ -1,0 +1,13 @@
+/* 
+  language.strings
+  WeChat
+
+  Created by 李莎鑫 on 2017/1/5.
+  Copyright © 2017年 李莎鑫. All rights reserved.
+*/
+"登录" = "Login";
+"注册" = "Register";
+"简体中文" = "Chinese(Simplified)";
+"多语言" = "More Language";
+"取消" = "Cancel";
+"返回" = "Back";

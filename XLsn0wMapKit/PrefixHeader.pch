@@ -33,7 +33,7 @@
 #import <AMapFoundationKit/AMapFoundationKit.h>
 
 
-
+#import <AFNetworking.h>
 
 #define SCREEN_HEGHT  [UIScreen mainScreen].bounds.size.height
 #define Cell_Border   10
