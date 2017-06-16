@@ -106,7 +106,7 @@
 //收集检索到的公交线路目标
 - (void)onBusLineSearchDone:(AMapBusLineBaseSearchRequest *)request response:(AMapBusLineSearchResponse *)response{
     
-    [XLsn0wLoadingToast hideHUD];
+    [XLsn0wLoadingToast hideToast];
     if (response.count==0) return;
     [XLsn0wLoadingToast showSuccess:@"查询成功"];
     

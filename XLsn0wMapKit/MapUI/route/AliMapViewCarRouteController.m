@@ -68,7 +68,7 @@
 //收集检索到的路线出行规划目标
 - (void)onRouteSearchDone:(AMapRouteSearchBaseRequest *)request response:(AMapRouteSearchResponse *)response{
     
-   [XLsn0wLoadingToast hideHUD];
+   [XLsn0wLoadingToast hideToast];
    [XLsn0wLoadingToast showSuccess:@"查询成功"];
    [response.route.paths enumerateObjectsUsingBlock:^(AMapPath * _Nonnull pathObj, NSUInteger idx, BOOL * _Nonnull stop) {
        [self.routeM appendFormat:@"起点和终点的距离：%.2lf千米\n",(float)pathObj.distance/1000];

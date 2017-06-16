@@ -52,7 +52,7 @@
 
 //收集地理编码检索到的目标
 - (void)onGeocodeSearchDone:(AMapGeocodeSearchRequest *)request response:(AMapGeocodeSearchResponse *)response{
-    [XLsn0wLoadingToast hideHUD];
+    [XLsn0wLoadingToast hideToast];
     if (response.geocodes.count == 0)  return;
     [XLsn0wLoadingToast showSuccess:@"地理编码成功"];
     [response.geocodes enumerateObjectsUsingBlock:^(AMapGeocode * _Nonnull geo, NSUInteger idx, BOOL * _Nonnull stop) {

@@ -52,7 +52,7 @@
 //收集检索到的公交站点目标
 - (void)onBusStopSearchDone:(AMapBusStopSearchRequest *)request response:(AMapBusStopSearchResponse *)response{
     
-    [XLsn0wLoadingToast hideHUD];
+    [XLsn0wLoadingToast hideToast];
     if (response.count==0) return;
     [XLsn0wLoadingToast showSuccess:@"查询成功"];
     

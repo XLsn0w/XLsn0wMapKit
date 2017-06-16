@@ -10,4 +10,8 @@
 
 @interface AliMapViewSystemNaviDriveController : UIViewController
 
+
+@property (strong, nonatomic) AMapNaviPoint *startPoint;
+@property (strong, nonatomic) AMapNaviPoint *endPoint;
+
 @end

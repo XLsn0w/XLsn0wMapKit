@@ -52,7 +52,7 @@
 
 //收集地理反编码检索到的目标
 - (void)onReGeocodeSearchDone:(AMapReGeocodeSearchRequest *)request response:(AMapReGeocodeSearchResponse *)response{
-    [XLsn0wLoadingToast hideHUD];
+    [XLsn0wLoadingToast hideToast];
     [XLsn0wLoadingToast showSuccess:@"地理反编码成功"];
     [self showGeocodeInformation:response.regeocode];
 }

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "AliMapRootViewController.h"
 #import "MainViewController.h"
+#import "AddressNaviViewController.h"
 
 @interface AppDelegate ()
 
@@ -25,16 +26,18 @@
     self.window.backgroundColor     = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
+    [AMapServices sharedServices].apiKey = AMapAPIKey;
     
-    AliMapRootViewController *vc = [[AliMapRootViewController alloc] init];
+    
+    AddressNaviViewController *vc = [[AddressNaviViewController alloc] init];
     self.window.rootViewController  = [[UINavigationController alloc] initWithRootViewController:vc];
 
+
     
-    [self getAndSaveCookie];
 
     
     
-    [AMapServices sharedServices].apiKey = AMapAPIKey;
+   
 
     
     return YES;

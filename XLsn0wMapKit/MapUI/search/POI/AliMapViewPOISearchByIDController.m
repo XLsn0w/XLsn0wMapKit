@@ -86,7 +86,7 @@
 //收集检索到的目标(默认每一次给出一页数据,可以自己通过上拉刷新设置page的增加)
 -(void)onPOISearchDone:(AMapPOISearchBaseRequest *)request response:(AMapPOISearchResponse *)response{
     
-    [XLsn0wLoadingToast hideHUD];
+    [XLsn0wLoadingToast hideToast];
     if(response.pois.count == 0)  return;
     [XLsn0wLoadingToast showSuccess:@"检索成功"];
     [response.pois enumerateObjectsUsingBlock:^(AMapPOI * _Nonnull poi, NSUInteger idx, BOOL * _Nonnull stop) {

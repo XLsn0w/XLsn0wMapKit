@@ -114,6 +114,8 @@
 		352954881EEFCB2C004B717F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352954871EEFCB2C004B717F /* MainViewController.m */; };
 		353A48251EF36E370069BC68 /* WKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A48241EF36E370069BC68 /* WKWebViewViewController.m */; };
 		353A48281EF36E390069BC68 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A48271EF36E390069BC68 /* AFNetworkingViewController.m */; };
+		353A482C1EF3A8C20069BC68 /* Mapcoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A482B1EF3A8C20069BC68 /* Mapcoding.m */; };
+		353A482F1EF3AC0C0069BC68 /* AddressNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A482E1EF3AC0C0069BC68 /* AddressNaviViewController.m */; };
 		359C552B1EF23C3C00DA5558 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359C552A1EF23C3C00DA5558 /* Images.xcassets */; };
 		359C55501EF23CAE00DA5558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359C554F1EF23CAE00DA5558 /* LaunchScreen.storyboard */; };
 		BC9DD152857B456E8C220715 /* libPods-XLsn0wMapKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F9A3ED34B2A3C23149C2CD /* libPods-XLsn0wMapKit.a */; };
@@ -287,6 +289,10 @@
 		353A48241EF36E370069BC68 /* WKWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewViewController.m; sourceTree = "<group>"; };
 		353A48261EF36E390069BC68 /* AFNetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
 		353A48271EF36E390069BC68 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
+		353A482A1EF3A8C20069BC68 /* Mapcoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapcoding.h; sourceTree = "<group>"; };
+		353A482B1EF3A8C20069BC68 /* Mapcoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mapcoding.m; sourceTree = "<group>"; };
+		353A482D1EF3AC0C0069BC68 /* AddressNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressNaviViewController.h; sourceTree = "<group>"; };
+		353A482E1EF3AC0C0069BC68 /* AddressNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressNaviViewController.m; sourceTree = "<group>"; };
 		359C552A1EF23C3C00DA5558 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		359C554F1EF23CAE00DA5558 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45E4DD885D2061B669AB5ED1 /* Pods-XLsn0wMapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wMapKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wMapKit/Pods-XLsn0wMapKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -395,12 +401,12 @@
 		351420941EF10894005C3846 /* navdrive */ = {
 			isa = PBXGroup;
 			children = (
+				351420991EF10894005C3846 /* AliMapViewSystemNaviDriveController.h */,
+				3514209A1EF10894005C3846 /* AliMapViewSystemNaviDriveController.m */,
 				351420951EF10894005C3846 /* AliMapViewCustomNavDeriveController.h */,
 				351420961EF10894005C3846 /* AliMapViewCustomNavDeriveController.m */,
 				351420971EF10894005C3846 /* AliMapViewNavController.h */,
 				351420981EF10894005C3846 /* AliMapViewNavController.m */,
-				351420991EF10894005C3846 /* AliMapViewSystemNaviDriveController.h */,
-				3514209A1EF10894005C3846 /* AliMapViewSystemNaviDriveController.m */,
 				3514209B1EF10894005C3846 /* UIImage+Extension.h */,
 				3514209C1EF10894005C3846 /* UIImage+Extension.m */,
 			);
@@ -603,6 +609,8 @@
 			children = (
 				350F52571EEFB4D60090C356 /* AppDelegate.h */,
 				350F52581EEFB4D60090C356 /* AppDelegate.m */,
+				353A482A1EF3A8C20069BC68 /* Mapcoding.h */,
+				353A482B1EF3A8C20069BC68 /* Mapcoding.m */,
 				352954601EEFBF2F004B717F /* PrefixHeader.pch */,
 				359C554F1EF23CAE00DA5558 /* LaunchScreen.storyboard */,
 				350F52601EEFB4D60090C356 /* Assets.xcassets */,
@@ -635,6 +643,8 @@
 				353A48271EF36E390069BC68 /* AFNetworkingViewController.m */,
 				352954861EEFCB2C004B717F /* MainViewController.h */,
 				352954871EEFCB2C004B717F /* MainViewController.m */,
+				353A482D1EF3AC0C0069BC68 /* AddressNaviViewController.h */,
+				353A482E1EF3AC0C0069BC68 /* AddressNaviViewController.m */,
 			);
 			path = Navi;
 			sourceTree = "<group>";
@@ -839,6 +849,7 @@
 				3514211A1EF10894005C3846 /* AliMapViewCustomPinAnnotationView.m in Sources */,
 				353A48251EF36E370069BC68 /* WKWebViewViewController.m in Sources */,
 				351421721EF10894005C3846 /* AliMapViewPOISearchByRouteController.m in Sources */,
+				353A482C1EF3A8C20069BC68 /* Mapcoding.m in Sources */,
 				351421761EF10894005C3846 /* AliMapViewShowController.m in Sources */,
 				3514216C1EF10894005C3846 /* AliMapViewBusStopSearchController.m in Sources */,
 				3514211E1EF10894005C3846 /* AliMapViewDrawPinCustomPointController.m in Sources */,
@@ -877,6 +888,7 @@
 				351421671EF10894005C3846 /* AliMapViewShopCellFrame.m in Sources */,
 				3514216F1EF10894005C3846 /* AliMapViewPOISearchByIDController.m in Sources */,
 				351421681EF10894005C3846 /* AliMapViewShopImageView.m in Sources */,
+				353A482F1EF3AC0C0069BC68 /* AddressNaviViewController.m in Sources */,
 				3514211B1EF10894005C3846 /* AliMapViewDrawController.m in Sources */,
 				351421751EF10894005C3846 /* AliMapViewWeatherSearchController.m in Sources */,
 				351421201EF10894005C3846 /* AliMapViewDrawPolylineController.m in Sources */,

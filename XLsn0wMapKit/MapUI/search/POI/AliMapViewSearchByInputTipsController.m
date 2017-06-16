@@ -65,7 +65,7 @@
 //收集检索到的目标
 - (void)onInputTipsSearchDone:(AMapInputTipsSearchRequest *)request response:(AMapInputTipsSearchResponse *)response{
     
-    [XLsn0wLoadingToast hideHUD];
+    [XLsn0wLoadingToast hideToast];
     if(response.tips.count == 0)  return;
     [XLsn0wLoadingToast showSuccess:@"检索成功"];
     [response.tips enumerateObjectsUsingBlock:^(AMapTip * _Nonnull poi, NSUInteger idx, BOOL * _Nonnull stop) {

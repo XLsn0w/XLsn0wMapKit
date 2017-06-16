@@ -50,7 +50,7 @@
 
 //收集检索到的天气目标
 - (void)onWeatherSearchDone:(AMapWeatherSearchRequest *)request response:(AMapWeatherSearchResponse *)response{
-    [XLsn0wLoadingToast hideHUD];
+    [XLsn0wLoadingToast hideToast];
     [XLsn0wLoadingToast showSuccess:@"获取天气成功"];
    
     //实时天气

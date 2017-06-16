@@ -1,17 +1,12 @@
-//
-//  AliMapViewSystemNaviDriveController.m
-//  AliMapKit
-//
-//  Created by 夏远全 on 16/12/12.
-//  Copyright © 2016年 广州市东德网络科技有限公司. All rights reserved.
-//  采用系统的导航导航界面
+
 
 #import "AliMapViewSystemNaviDriveController.h"
 
 @interface AliMapViewSystemNaviDriveController () <AMapNaviDriveViewDelegate, AMapNaviDriveManagerDelegate>
 
-@property (strong ,nonatomic)AMapNaviDriveView *driveView;       //导航界面
-@property (strong ,nonatomic)AMapNaviDriveManager *driveManager; //导航管理者
+@property (strong ,nonatomic) AMapNaviDriveView *naviDriveView;       //导航界面
+@property (strong ,nonatomic) AMapNaviDriveManager *naviDriveManager; //导航管理者
+
 
 @end
 
@@ -23,35 +18,26 @@
     [self initDriveManager];
 }
 
-- (void)initDriveView {
-    if (!self.driveView){
-        //初始化导航界面
-        self.driveView = [[AMapNaviDriveView alloc] initWithFrame:CGRectMake(0,64,SCREEN_WIDTH, kScreenHeight-64)];
-        self.driveView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
-        self.driveView.showTrafficButton = YES;
-        [self.driveView setDelegate:self];
-        [self.view addSubview:self.driveView];
-    }
+- (void)initDriveView {//初始化导航界面
+    self.naviDriveView = [[AMapNaviDriveView alloc] initWithFrame:CGRectMake(0,64, kScreenWidth, kScreenHeight-64)];
+    self.naviDriveView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+    self.naviDriveView.showTrafficButton = YES;
+    self.naviDriveView.delegate = self;
+    [self.view addSubview:self.naviDriveView];
 }
 
-- (void)initDriveManager {
-    if (!self.driveManager) {
-        
-        //初始化导航管理者
-        self.driveManager = [[AMapNaviDriveManager alloc] init];
-        [self.driveManager setDelegate:self];
-        
-        
-        //设置驾车出行路线规划
-        AMapNaviPoint *startPoint = [AMapNaviPoint locationWithLatitude:40.22 longitude:116.23];//昌平区
-        AMapNaviPoint *endPoint   = [AMapNaviPoint locationWithLatitude:39.85 longitude:116.28];//丰台区
-        [self.driveManager calculateDriveRouteWithStartPoints:@[startPoint]
-                                                    endPoints:@[endPoint]
+- (void)initDriveManager {//初始化导航管理者
+    self.naviDriveManager = [[AMapNaviDriveManager alloc] init];
+    self.naviDriveManager.delegate = self;
+    
+    
+    //设置驾车出行路线规划
+    [self.naviDriveManager calculateDriveRouteWithStartPoints:@[self.startPoint]
+                                                    endPoints:@[self.endPoint]
                                                     wayPoints:nil
-                                              drivingStrategy:17];
-        //将driveView添加为导航数据的Representative，使其可以接收到导航诱导数据
-        [self.driveManager addDataRepresentative:self.driveView];
-    }
+                                              drivingStrategy:AMapNaviDrivingStrategyMultipleAvoidHighwayAndCostAndCongestion];
+    //将driveView添加为导航数据的Representative，使其可以接收到导航诱导数据
+    [self.naviDriveManager addDataRepresentative:self.naviDriveView];
 }
 
 #pragma mark -  AMapNaviDriveViewDelegate
@@ -101,11 +87,11 @@
     NSLog(@"onCalculateRouteSuccess");
     
     //算路成功后开始GPS导航
-    //[self.driveManager startGPSNavi];
+    [self.self.naviDriveManager startGPSNavi];
     
     //算路成功后进行模拟导航
-    [self.driveManager startEmulatorNavi];
-    [self.driveManager setEmulatorNaviSpeed:80];
+//    [self.naviDriveManager startEmulatorNavi];
+    [self.naviDriveManager setEmulatorNaviSpeed:80];
 }
 
 @end

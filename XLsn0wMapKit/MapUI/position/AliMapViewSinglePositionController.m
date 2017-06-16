@@ -46,7 +46,7 @@
     //一次获取定位信息（带反编码）
     [XLsn0wLoadingToast showMessage:@"正在定位"];
     [self.locationManager requestLocationWithReGeocode:YES completionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
-        [XLsn0wLoadingToast hideHUD];
+        [XLsn0wLoadingToast hideToast];
         if (error){
             [XLsn0wLoadingToast showError:@"定位失败"];
             if(error.code == AMapLocationErrorLocateFailed) return;

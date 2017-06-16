@@ -32,7 +32,7 @@
 #import <AMapSearchKit/AMapSearchKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
 
-
+#import "Mapcoding.h"
 #import <AFNetworking.h>
 
 #define SCREEN_HEGHT  [UIScreen mainScreen].bounds.size.height

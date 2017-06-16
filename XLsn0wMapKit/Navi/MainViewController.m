@@ -44,10 +44,14 @@
     //一次获取定位信息（带反编码）
     //[XYQProgressHUD showMessage:@"正在定位"];
     [self.locationManager requestLocationWithReGeocode:YES completionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
+        
+        XLsn0wLog(@"%@", regeocode);
+        
         //[XYQProgressHUD hideHUD];
         if (error){
             //[XYQProgressHUD showError:@"定位失败"];
-            if(error.code == AMapLocationErrorLocateFailed) return;
+            if(error.code == AMapLocationErrorLocateFailed)
+            return;
         }
         if (location && regeocode){
             //[XYQProgressHUD showSuccess:@"定位成功"];
@@ -58,7 +62,7 @@
 }
 
 //设置百米精确度
--(void)setLocationManagerForHundredMeters{
+- (void)setLocationManagerForHundredMeters{
     
     //1.带逆地理信息的一次定位（返回坐标和地址信息）
     [self.locationManager setDesiredAccuracy:kCLLocationAccuracyHundredMeters];
