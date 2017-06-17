@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSFileManager/NSFileManager+JKPaths.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSFileManager/NSFileManager+JKPaths.h

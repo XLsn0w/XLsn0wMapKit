@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSDictionary/NSDictionary+JKURL.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSDictionary/NSDictionary+JKURL.h

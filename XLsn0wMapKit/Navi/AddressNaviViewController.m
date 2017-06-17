@@ -12,8 +12,8 @@
 
 @interface AddressNaviViewController () <UITextFieldDelegate>
 
-@property (nonatomic,strong) UITextField *startTextField;
-@property (nonatomic,strong) UITextField *endTextField;
+@property (nonatomic, strong) UITextField *startTextField;
+@property (nonatomic, strong) UITextField *endTextField;
 @property (strong, nonatomic) AMapNaviPoint *startPoint;
 @property (strong, nonatomic) AMapNaviPoint *endPoint;
 
@@ -31,6 +31,7 @@
     _startTextField.layer.borderColor = [UIColor redColor].CGColor;
     [self.view addSubview:_startTextField];
     _startTextField.delegate = self;
+    _startTextField.placeholder = @"输入出发点";
     
     _endTextField  = [[UITextField alloc]initWithFrame:CGRectMake(50, 200, kScreenWidth - 100, 30)];
     _endTextField.layer.borderWidth = 1.0;
@@ -38,6 +39,7 @@
     _endTextField.layer.borderColor = [UIColor redColor].CGColor;
     [self.view addSubview:_endTextField];
     _endTextField.delegate = self;
+    _endTextField.placeholder = @"输入目的地";
 
     UIButton *naviButton = [UIButton buttonWithType:(UIButtonTypeCustom)];
     [self.view addSubview:naviButton];
@@ -62,35 +64,37 @@
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     if (textField == _startTextField) {
-        Mapcoding * map = [[Mapcoding alloc] init];
-        [map getMapcoding:_startTextField.text getMapcoding:^(NSMutableDictionary *mapCodDic) {
-            XLsn0wLog(@"%@", mapCodDic);
-            self.startPoint = [AMapNaviPoint locationWithLatitude:[mapCodDic[@"latitude"] floatValue] longitude:[mapCodDic[@"longitude"] floatValue]];
+        [XLsn0wMapGeoCoder searchAddress:_startTextField.text mapGeoInfoCallback:^(NSMutableDictionary *mapGeoInfo) {
+            XLsn0wLog(@"%@", mapGeoInfo);
+            self.startPoint = [AMapNaviPoint locationWithLatitude:[mapGeoInfo[@"latitude"] floatValue] longitude:[mapGeoInfo[@"longitude"] floatValue]];
         }];
     } else {
-        Mapcoding * map = [[Mapcoding alloc] init];
-        [map getMapcoding:_endTextField.text getMapcoding:^(NSMutableDictionary *mapCodDic) {
-            XLsn0wLog(@"%@", mapCodDic);
-            self.endPoint = [AMapNaviPoint locationWithLatitude:[mapCodDic[@"latitude"] floatValue] longitude:[mapCodDic[@"longitude"] floatValue]];
+
+        [XLsn0wMapGeoCoder searchAddress:_endTextField.text mapGeoInfoCallback:^(NSMutableDictionary *mapGeoInfo) {
+            
+            XLsn0wLog(@"%@", mapGeoInfo);
+            self.endPoint = [AMapNaviPoint locationWithLatitude:[mapGeoInfo[@"latitude"] floatValue] longitude:[mapGeoInfo[@"longitude"] floatValue]];
         }];
     }
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     if (textField == _startTextField) {
-        Mapcoding * map = [[Mapcoding alloc] init];
-        [map getMapcoding:_startTextField.text getMapcoding:^(NSMutableDictionary *mapCodDic) {
-            XLsn0wLog(@"%@", mapCodDic);
-            self.startPoint = [AMapNaviPoint locationWithLatitude:[mapCodDic[@"latitude"] floatValue] longitude:[mapCodDic[@"longitude"] floatValue]];
+        [XLsn0wMapGeoCoder searchAddress:_startTextField.text mapGeoInfoCallback:^(NSMutableDictionary *mapGeoInfo) {
+            
+            
+            
+            self.startPoint = [AMapNaviPoint locationWithLatitude:[mapGeoInfo[@"latitude"] floatValue] longitude:[mapGeoInfo[@"longitude"] floatValue]];
         }];
+        
+        
     } else {
-        Mapcoding * map = [[Mapcoding alloc] init];
-        [map getMapcoding:_endTextField.text getMapcoding:^(NSMutableDictionary *mapCodDic) {
-            XLsn0wLog(@"%@", mapCodDic);
-            self.endPoint = [AMapNaviPoint locationWithLatitude:[mapCodDic[@"latitude"] floatValue] longitude:[mapCodDic[@"longitude"] floatValue]];
+        [XLsn0wMapGeoCoder searchAddress:_endTextField.text mapGeoInfoCallback:^(NSMutableDictionary *mapGeoInfo) {
+            
+            
+            self.endPoint = [AMapNaviPoint locationWithLatitude:[mapGeoInfo[@"latitude"] floatValue] longitude:[mapGeoInfo[@"longitude"] floatValue]];
         }];
     }
-
     
     return YES;
 }

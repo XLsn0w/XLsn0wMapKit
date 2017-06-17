@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/MKMapView/MKMapView+JKMoveLogo.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/MKMapView/MKMapView+JKMoveLogo.h

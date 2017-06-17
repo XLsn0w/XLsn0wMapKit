@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UIDevice/UIDevice+BFKit.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UIDevice/UIDevice+BFKit.h

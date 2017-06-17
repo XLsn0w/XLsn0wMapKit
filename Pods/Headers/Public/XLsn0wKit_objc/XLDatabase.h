@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wComponentKit/XLDataBase/XLDatabase.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wComponents/XLDataBase/XLDatabase.h

@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UISearchBar/UISearchBar+JKBlocks.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UISearchBar/UISearchBar+JKBlocks.h

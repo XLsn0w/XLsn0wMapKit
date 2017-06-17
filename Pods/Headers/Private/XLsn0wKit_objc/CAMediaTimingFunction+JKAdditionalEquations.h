@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/CAMediaTimingFunction/CAMediaTimingFunction+JKAdditionalEquations.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/CAMediaTimingFunction/CAMediaTimingFunction+JKAdditionalEquations.h

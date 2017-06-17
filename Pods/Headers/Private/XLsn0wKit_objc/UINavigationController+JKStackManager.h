@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UINavigationController/UINavigationController+JKStackManager.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UINavigationController/UINavigationController+JKStackManager.h

@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wComponentKit/XLsn0wQRCodeReader/XLsn0wQRCodeReader.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wComponents/XLsn0wQRCodeReader/XLsn0wQRCodeReader.h

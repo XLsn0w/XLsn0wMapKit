@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UIApplication/UIApplication+JKPermissions.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UIApplication/UIApplication+JKPermissions.h

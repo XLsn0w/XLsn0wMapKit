@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSObject/NSObject+GetCurrentScreenViewController.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSObject/NSObject+GetCurrentScreenViewController.h

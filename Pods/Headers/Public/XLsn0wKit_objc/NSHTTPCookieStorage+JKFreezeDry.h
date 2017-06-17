@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSHTTPCookieStorage/NSHTTPCookieStorage+JKFreezeDry.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSHTTPCookieStorage/NSHTTPCookieStorage+JKFreezeDry.h

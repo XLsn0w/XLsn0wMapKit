@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSURLRequest/NSURLRequest+JKParamsFromDictionary.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSURLRequest/NSURLRequest+JKParamsFromDictionary.h

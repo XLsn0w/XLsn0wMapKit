@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSBundle+JKAppIcon/NSBundle+JKAppIcon.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSBundle+JKAppIcon/NSBundle+JKAppIcon.h

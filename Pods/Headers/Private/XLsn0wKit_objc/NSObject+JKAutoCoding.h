@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSObject/NSObject+JKAutoCoding.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSObject/NSObject+JKAutoCoding.h

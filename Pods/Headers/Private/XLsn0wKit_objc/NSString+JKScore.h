@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSString/NSString+JKScore.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSString/NSString+JKScore.h

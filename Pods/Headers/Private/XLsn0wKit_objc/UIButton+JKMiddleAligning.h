@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UIButton/UIButton+JKMiddleAligning.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UIButton/UIButton+JKMiddleAligning.h

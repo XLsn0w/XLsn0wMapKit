@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UIColor/UIColor+BgColor.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UIColor/UIColor+BgColor.h

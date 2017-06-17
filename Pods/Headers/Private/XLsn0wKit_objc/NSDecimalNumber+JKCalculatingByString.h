@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSDecimalNumber/NSDecimalNumber+JKCalculatingByString.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSDecimalNumber/NSDecimalNumber+JKCalculatingByString.h

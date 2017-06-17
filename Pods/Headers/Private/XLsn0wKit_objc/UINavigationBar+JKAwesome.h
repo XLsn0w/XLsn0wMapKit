@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UINavigationBar/UINavigationBar+JKAwesome.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UINavigationBar/UINavigationBar+JKAwesome.h

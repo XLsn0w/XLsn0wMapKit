@@ -114,7 +114,6 @@
 		352954881EEFCB2C004B717F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352954871EEFCB2C004B717F /* MainViewController.m */; };
 		353A48251EF36E370069BC68 /* WKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A48241EF36E370069BC68 /* WKWebViewViewController.m */; };
 		353A48281EF36E390069BC68 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A48271EF36E390069BC68 /* AFNetworkingViewController.m */; };
-		353A482C1EF3A8C20069BC68 /* Mapcoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A482B1EF3A8C20069BC68 /* Mapcoding.m */; };
 		353A482F1EF3AC0C0069BC68 /* AddressNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A482E1EF3AC0C0069BC68 /* AddressNaviViewController.m */; };
 		359C552B1EF23C3C00DA5558 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359C552A1EF23C3C00DA5558 /* Images.xcassets */; };
 		359C55501EF23CAE00DA5558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359C554F1EF23CAE00DA5558 /* LaunchScreen.storyboard */; };
@@ -289,8 +288,6 @@
 		353A48241EF36E370069BC68 /* WKWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewViewController.m; sourceTree = "<group>"; };
 		353A48261EF36E390069BC68 /* AFNetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
 		353A48271EF36E390069BC68 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
-		353A482A1EF3A8C20069BC68 /* Mapcoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapcoding.h; sourceTree = "<group>"; };
-		353A482B1EF3A8C20069BC68 /* Mapcoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mapcoding.m; sourceTree = "<group>"; };
 		353A482D1EF3AC0C0069BC68 /* AddressNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressNaviViewController.h; sourceTree = "<group>"; };
 		353A482E1EF3AC0C0069BC68 /* AddressNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressNaviViewController.m; sourceTree = "<group>"; };
 		359C552A1EF23C3C00DA5558 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -609,8 +606,6 @@
 			children = (
 				350F52571EEFB4D60090C356 /* AppDelegate.h */,
 				350F52581EEFB4D60090C356 /* AppDelegate.m */,
-				353A482A1EF3A8C20069BC68 /* Mapcoding.h */,
-				353A482B1EF3A8C20069BC68 /* Mapcoding.m */,
 				352954601EEFBF2F004B717F /* PrefixHeader.pch */,
 				359C554F1EF23CAE00DA5558 /* LaunchScreen.storyboard */,
 				350F52601EEFB4D60090C356 /* Assets.xcassets */,
@@ -849,7 +844,6 @@
 				3514211A1EF10894005C3846 /* AliMapViewCustomPinAnnotationView.m in Sources */,
 				353A48251EF36E370069BC68 /* WKWebViewViewController.m in Sources */,
 				351421721EF10894005C3846 /* AliMapViewPOISearchByRouteController.m in Sources */,
-				353A482C1EF3A8C20069BC68 /* Mapcoding.m in Sources */,
 				351421761EF10894005C3846 /* AliMapViewShowController.m in Sources */,
 				3514216C1EF10894005C3846 /* AliMapViewBusStopSearchController.m in Sources */,
 				3514211E1EF10894005C3846 /* AliMapViewDrawPinCustomPointController.m in Sources */,

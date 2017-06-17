@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UIBezierPath/UIBezierPath+JKSymbol.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UIBezierPath/UIBezierPath+JKSymbol.h

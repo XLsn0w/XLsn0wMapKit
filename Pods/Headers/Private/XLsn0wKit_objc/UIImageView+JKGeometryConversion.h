@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UIImageView/UIImageView+JKGeometryConversion.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UIImageView/UIImageView+JKGeometryConversion.h

@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UIScrollView/UIScrollView+JKPages.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UIScrollView/UIScrollView+JKPages.h

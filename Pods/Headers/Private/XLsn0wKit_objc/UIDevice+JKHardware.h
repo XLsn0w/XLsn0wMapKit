@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UIDevice/UIDevice+JKHardware.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UIDevice/UIDevice+JKHardware.h

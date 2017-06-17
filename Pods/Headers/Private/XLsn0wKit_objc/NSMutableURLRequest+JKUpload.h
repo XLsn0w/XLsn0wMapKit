@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSMutableURLRequest/NSMutableURLRequest+JKUpload.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSMutableURLRequest/NSMutableURLRequest+JKUpload.h

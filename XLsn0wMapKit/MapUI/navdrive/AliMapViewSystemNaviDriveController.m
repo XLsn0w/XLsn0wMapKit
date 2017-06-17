@@ -33,9 +33,11 @@
     
     //设置驾车出行路线规划
     [self.naviDriveManager calculateDriveRouteWithStartPoints:@[self.startPoint]
-                                                    endPoints:@[self.endPoint]
+                                                    endPoints:[NSArray arrayWithObject:self.endPoint]
                                                     wayPoints:nil
                                               drivingStrategy:AMapNaviDrivingStrategyMultipleAvoidHighwayAndCostAndCongestion];
+    self.naviDriveManager.detectedMode = AMapNaviDetectedModeCameraAndSpecialRoad;
+    [self.naviDriveManager setBroadcastMode:(AMapNaviBroadcastModeDetailed)];
     //将driveView添加为导航数据的Representative，使其可以接收到导航诱导数据
     [self.naviDriveManager addDataRepresentative:self.naviDriveView];
 }

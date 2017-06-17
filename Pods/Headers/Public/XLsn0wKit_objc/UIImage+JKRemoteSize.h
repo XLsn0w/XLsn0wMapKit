@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UIImage/UIImage+JKRemoteSize.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UIImage/UIImage+JKRemoteSize.h

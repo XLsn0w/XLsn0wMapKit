@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSDate/NSDate+JKCupertinoYankee.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSDate/NSDate+JKCupertinoYankee.h

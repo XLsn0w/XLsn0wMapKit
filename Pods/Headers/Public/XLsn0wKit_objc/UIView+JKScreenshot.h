@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UIView/UIView+JKScreenshot.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UIView/UIView+JKScreenshot.h

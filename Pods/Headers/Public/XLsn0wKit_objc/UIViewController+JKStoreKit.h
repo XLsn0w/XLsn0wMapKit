@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UIViewController/UIViewController+JKStoreKit.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UIViewController/UIViewController+JKStoreKit.h

@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSData/NSData+JKBase64.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSData/NSData+JKBase64.h

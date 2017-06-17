@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UILabel/UILabel+JKAutomaticWriting.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UILabel/UILabel+JKAutomaticWriting.h

@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSURL/NSURL+JKParam.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSURL/NSURL+JKParam.h

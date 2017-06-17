@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSData/NSData+JKAPNSToken.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSData/NSData+JKAPNSToken.h

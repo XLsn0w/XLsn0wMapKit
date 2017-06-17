@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UIImage/UIImage+JKRoundedCorner.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UIImage/UIImage+JKRoundedCorner.h

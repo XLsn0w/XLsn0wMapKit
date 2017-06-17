@@ -95,6 +95,15 @@
     NSLog(@"%@", regeocode.province);
     NSLog(@"%@", regeocode.city);
     NSLog(@"%@", regeocode.district);
+    
+    
+    CGFloat latitude = [[NSString stringWithFormat:@"%lf", location.coordinate.latitude] floatValue];
+    CGFloat longitude = [[NSString stringWithFormat:@"%lf", location.coordinate.longitude] floatValue];
+    MAPointAnnotation *pointAnnotation = [[MAPointAnnotation alloc] init];
+    pointAnnotation.coordinate = CLLocationCoordinate2DMake(latitude, longitude);
+    pointAnnotation.title = regeocode.district;
+//    pointAnnotation.subtitle = @"阜通东大街6号";
+    [_mapView addAnnotation:pointAnnotation];
 
     
 }
@@ -117,20 +126,6 @@
         return annotationView;
     }
     return nil;
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    
-    
-    MAPointAnnotation *pointAnnotation = [[MAPointAnnotation alloc] init];
-    pointAnnotation.coordinate = CLLocationCoordinate2DMake(39.989631, 116.481018);
-    pointAnnotation.title = @"方恒国际";
-    pointAnnotation.subtitle = @"阜通东大街6号";
-   
-    
-    
-    [_mapView addAnnotation:pointAnnotation];
 }
 
 //- (void)viewWillAppear:(BOOL)animated {

@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UIImageView/UIImageView+JKLetters.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UIImageView/UIImageView+JKLetters.h

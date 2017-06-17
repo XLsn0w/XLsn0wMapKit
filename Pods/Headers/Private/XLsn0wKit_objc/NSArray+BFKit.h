@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSArray/NSArray+BFKit.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSArray/NSArray+BFKit.h

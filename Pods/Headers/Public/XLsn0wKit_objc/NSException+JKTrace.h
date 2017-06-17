@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/NSException/NSException+JKTrace.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/NSException/NSException+JKTrace.h

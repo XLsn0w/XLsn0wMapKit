@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UIView/UIView+JKVisuals.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UIView/UIView+JKVisuals.h

@@ -33,7 +33,7 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
-  - XLsn0wKit_objc (6.1.2):
+  - XLsn0wKit_objc (6.1.3):
     - AFNetworking
     - FMDB
     - Masonry
@@ -61,7 +61,7 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  XLsn0wKit_objc: e5b0a9e8420cf7e2f4b5f377645295fabbef4b89
+  XLsn0wKit_objc: 5818eafb7db77102e6e1516684039a1fcc1350bf
 
 PODFILE CHECKSUM: 7bdd3485a882fc02c412ef656688327116204936
 

@@ -1,1 +1,1 @@
-../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wCategoryKit/UIApplication/UIApplication+JKApplicationSize.h
+../../../XLsn0wKit_objc/XLsn0wKit/XLsn0wExtensions/UIApplication/UIApplication+JKApplicationSize.h
