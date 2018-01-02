@@ -118,6 +118,7 @@
 		359C552B1EF23C3C00DA5558 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359C552A1EF23C3C00DA5558 /* Images.xcassets */; };
 		359C55501EF23CAE00DA5558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359C554F1EF23CAE00DA5558 /* LaunchScreen.storyboard */; };
 		BC9DD152857B456E8C220715 /* libPods-XLsn0wMapKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F9A3ED34B2A3C23149C2CD /* libPods-XLsn0wMapKit.a */; };
+		CDA497F71FFB63A000D1C4F9 /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA497F61FFB63A000D1C4F9 /* SwitchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -293,6 +294,8 @@
 		359C552A1EF23C3C00DA5558 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		359C554F1EF23CAE00DA5558 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45E4DD885D2061B669AB5ED1 /* Pods-XLsn0wMapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wMapKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wMapKit/Pods-XLsn0wMapKit.debug.xcconfig"; sourceTree = "<group>"; };
+		CDA497F51FFB63A000D1C4F9 /* SwitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
+		CDA497F61FFB63A000D1C4F9 /* SwitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -606,6 +609,8 @@
 			children = (
 				350F52571EEFB4D60090C356 /* AppDelegate.h */,
 				350F52581EEFB4D60090C356 /* AppDelegate.m */,
+				CDA497F51FFB63A000D1C4F9 /* SwitchViewController.h */,
+				CDA497F61FFB63A000D1C4F9 /* SwitchViewController.m */,
 				352954601EEFBF2F004B717F /* PrefixHeader.pch */,
 				359C554F1EF23CAE00DA5558 /* LaunchScreen.storyboard */,
 				350F52601EEFB4D60090C356 /* Assets.xcassets */,
@@ -896,6 +901,7 @@
 				351421201EF10894005C3846 /* AliMapViewDrawPolylineController.m in Sources */,
 				3514212D1EF10894005C3846 /* AliMapViewContinuePositionController.m in Sources */,
 				351421221EF10894005C3846 /* AliMapViewDrawSurfaceController.m in Sources */,
+				CDA497F71FFB63A000D1C4F9 /* SwitchViewController.m in Sources */,
 				3514211D1EF10894005C3846 /* AliMapViewDrawPinController.m in Sources */,
 				351421741EF10894005C3846 /* AliMapViewSearchByInputTipsController.m in Sources */,
 				351421181EF10894005C3846 /* AliMapViewCustomAnnotationView.m in Sources */,

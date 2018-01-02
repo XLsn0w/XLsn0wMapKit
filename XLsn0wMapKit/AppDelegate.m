@@ -10,6 +10,8 @@
 #import "AliMapRootViewController.h"
 #import "MainViewController.h"
 #import "AddressNaviViewController.h"
+#import "SwitchViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -19,55 +21,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    XLsn0wLog(@"Using XLsn0wKit");
-    
+
+    /// 设置window的样式
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor     = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    [AMapServices sharedServices].apiKey = AMapAPIKey;
-    
-    
-    AddressNaviViewController *vc = [[AddressNaviViewController alloc] init];
+    SwitchViewController *vc = [[SwitchViewController alloc] init];
     self.window.rootViewController  = [[UINavigationController alloc] initWithRootViewController:vc];
 
-
-    
-
-    
-    
-   
-
+    [AMapServices sharedServices].apiKey = AMapAPIKey;
     
     return YES;
-}
-
-- (void)downloadZip {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{// long-running task
-        
-        [XLsn0wNetworkManager downloadFileWithURL:@"http://cloud.lgcool.com/CityPark/resourceDownload/samecity_ios.zip"
-                                    requestMethod:@"GET"
-                                       parameters:nil
-                                         savePath:[NSHomeDirectory() stringByAppendingString:@"/Documents/CityPark/"]
-                                  downloadSuccess:^(NSURLResponse *response, NSURL *filePath) {
-                                      
-                                      XLsn0wLog(@"%@", filePath.path);
-                                      
-                                  } downloadFailure:^(NSError *error) {
-                                      
-                                      
-                                  } downloadProgress:^(NSProgress *downloadProgress) {
-                                      
-                                      XLsn0wLog(@"%@", downloadProgress);
-                                  }];
-        
-        dispatch_async(dispatch_get_main_queue(), ^{// update UI
-            
-        });
-    });
-    
-
 }
 
 #pragma mark 获取并保存cookie到userDefaults
