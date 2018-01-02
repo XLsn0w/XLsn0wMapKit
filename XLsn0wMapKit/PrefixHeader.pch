@@ -47,17 +47,16 @@
 #import <AMapNaviKit/AMapNaviKit.h>
 
 
-
+///宏定义
 #define AMapAPIKey @"f5baa9e5ca5dd3a940bd05da68bdac1c"
 
 #define ScreenWidth [[UIScreen mainScreen] bounds].size.width
 #define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+
 #define Dis_Navi 64
 #define FontSize [UIFont systemFontOfSize:17]
 #define Cell_Border 10
-
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #endif /* PrefixHeader_pch */
 

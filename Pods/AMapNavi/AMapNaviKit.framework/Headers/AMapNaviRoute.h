@@ -65,6 +65,12 @@
 ///分段的收费金额
 @property (nonatomic, assign) NSInteger tollCost;
 
+///分段的红绿灯数量
+@property (nonatomic, assign) NSInteger trafficLightCount;
+
+///分段是否到达途经点
+@property (nonatomic, assign) BOOL isArriveWayPoint;
+
 @end
 
 #pragma mark - AMapNaviRoute
@@ -125,5 +131,17 @@
 
 ///路径限行信息 since 5.0.0
 @property (nonatomic, strong) AMapNaviRestrictionInfo *restrictionInfo;
+
+///路径的路况信息 since 5.1.0
+@property (nonatomic, strong) NSArray<AMapNaviTrafficStatus *> *routeTrafficStatuses;
+
+///路径的聚合段信息 since 5.1.0
+@property (nonatomic, strong) NSArray<AMapNaviGroupSegment *> *routeGroupSegments;
+
+///路径经过的城市的adcode列表 since 5.1.0
+@property (nonatomic, strong) NSArray<NSNumber *> *routeCityAdcodes;
+
+///路径的所有红绿灯坐标 since 5.3.0
+@property (nonatomic, strong) NSArray<AMapNaviPoint *> *routeTrafficLights;
 
 @end

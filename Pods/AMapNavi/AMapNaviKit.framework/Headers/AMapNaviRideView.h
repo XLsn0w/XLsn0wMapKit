@@ -44,7 +44,7 @@ typedef NS_ENUM(NSInteger, AMapNaviRideViewShowMode)
 ///是否显示界面元素,默认YES
 @property (nonatomic, assign) BOOL showUIElements;
 
-///是否黑夜模式,默认NO
+///是否黑夜模式,默认NO. 对应的地图样式为:白天模式MAMapTypeNavi,黑夜模式MAMapTypeStandardNight.
 @property (nonatomic, assign) BOOL showStandardNightType;
 
 ///是否显示全览按钮,默认YES
@@ -55,6 +55,9 @@ typedef NS_ENUM(NSInteger, AMapNaviRideViewShowMode)
 
 ///是否显示转向箭头,默认YES
 @property (nonatomic, assign) BOOL showTurnArrow;
+
+///是否显示传感器方向信息,默认NO.设置为YES后,自车图标方向将显示为设备方向
+@property (nonatomic, assign) BOOL showSensorHeading;
 
 #pragma mark - MapView
 
@@ -69,6 +72,15 @@ typedef NS_ENUM(NSInteger, AMapNaviRideViewShowMode)
 
 ///当前地图比例尺的原点位置，默认(10,10)
 @property (nonatomic, assign) CGPoint scaleOrigin;
+
+///当前地图是否开启自定义样式, 默认NO. 设置为YES，将忽略showStandardNightType的设置，并将mapType切换为MAMapTypeStandard. 设置为NO，将根据showStandardNightType恢复mapType. since 5.1.0
+@property (nonatomic, assign) BOOL customMapStyleEnabled;
+
+/**
+ * @brief 自定义当前地图样式, 目前仅支持自定义标准类型. 默认不生效，调用customMapStyleEnabled=YES使生效.
+ * @param customJson 自定义的JSON格式数据.
+ */
+- (void)setCustomMapStyle:(NSData *)customJson;
 
 #pragma mark - Polyline Texture
 

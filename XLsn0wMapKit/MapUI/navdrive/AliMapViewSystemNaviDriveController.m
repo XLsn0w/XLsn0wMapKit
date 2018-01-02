@@ -27,7 +27,7 @@
 }
 
 - (void)initDriveManager {//初始化导航管理者
-    self.naviDriveManager = [[AMapNaviDriveManager alloc] init];
+    self.naviDriveManager = [AMapNaviDriveManager sharedInstance];
     self.naviDriveManager.delegate = self;
     
     

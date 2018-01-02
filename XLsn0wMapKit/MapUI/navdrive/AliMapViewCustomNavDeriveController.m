@@ -74,7 +74,7 @@
     if (!self.driveManager){
         
         //初始化导航管理者
-        self.driveManager = [[AMapNaviDriveManager alloc] init];
+        self.driveManager = [AMapNaviDriveManager sharedInstance];
         [self.driveManager setDelegate:self];
         
         

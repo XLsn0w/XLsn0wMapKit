@@ -51,7 +51,7 @@ typedef NS_ENUM(NSInteger, AMapNaviDriveViewShowMode)
 ///是否显示路口放大图,默认YES
 @property (nonatomic, assign) BOOL showCrossImage;
 
-///是否黑夜模式,默认NO
+///是否黑夜模式,默认NO. 对应的地图样式为:白天模式MAMapTypeNavi,黑夜模式MAMapTypeStandardNight.
 @property (nonatomic, assign) BOOL showStandardNightType;
 
 ///是否显示全览按钮,默认YES
@@ -72,6 +72,9 @@ typedef NS_ENUM(NSInteger, AMapNaviDriveViewShowMode)
 ///是否显示转向箭头,默认YES
 @property (nonatomic, assign) BOOL showTurnArrow;
 
+///当显示模式为非锁车模式时，是否在6秒后自动设置为锁车模式，默认为NO. since 5.3.0
+@property (nonatomic, assign) BOOL autoSwitchShowModeToCarPositionLocked;
+
 #pragma mark - MapView
 
 ///是否显示指南针,默认NO
@@ -89,10 +92,31 @@ typedef NS_ENUM(NSInteger, AMapNaviDriveViewShowMode)
 ///当前地图比例尺的原点位置，默认(10,10)
 @property (nonatomic, assign) CGPoint scaleOrigin;
 
+///当前地图是否开启自定义样式, 默认NO. 设置为YES，将忽略showStandardNightType的设置，并将mapType切换为MAMapTypeStandard. 设置为NO，将根据showStandardNightType恢复mapType. since 5.1.0
+@property (nonatomic, assign) BOOL customMapStyleEnabled;
+
+/**
+ * @brief 自定义当前地图样式, 目前仅支持自定义标准类型. 默认不生效，调用customMapStyleEnabled=YES使生效. since 5.1.0
+ * @param customJson 自定义的JSON格式数据.
+ */
+- (void)setCustomMapStyle:(NSData *)customJson;
+
+/**
+ * @brief 根据web导出数据设置地图样式, 目前仅支持自定义标准类型. 默认不生效，调用customMapStyleEnabled=YES使生效. since 5.1.0
+ * @param data 高德web端工具导出的地图样式数据.
+ */
+- (void)setCustomMapStyleWithWebData:(NSData*)data;
+
+///自定义导航界面自车图标的弹出框view, 设置为nil取消弹框. 注意:弹框功能同MAAnnotationView的customCalloutView, 弹框不会触发 mapView:didAnnotationViewCalloutTapped: 方法. since 5.1.0
+@property (nonatomic, strong, nullable) MACustomCalloutView *customCalloutView;
+
 #pragma mark - Polyline Texture
 
 ///路线polyline的宽度,设置0恢复默认宽度
 @property (nonatomic, assign) CGFloat lineWidth;
+
+///路线polyline的虚线部分宽度,设置0恢复默认宽度
+@property (nonatomic, assign) CGFloat dashedLineWidth;
 
 ///标准路线Polyline的纹理图片,设置nil恢复默认纹理.纹理图片需满足：长宽相等，且宽度值为2的次幂
 @property (nonatomic, copy, nullable) UIImage *normalTexture;

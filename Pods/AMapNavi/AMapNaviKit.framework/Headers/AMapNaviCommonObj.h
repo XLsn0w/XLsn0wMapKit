@@ -72,22 +72,22 @@ typedef NS_ENUM(NSInteger, AMapNaviDrivingStrategy)
 ///路径计算状态
 typedef NS_ENUM(NSInteger, AMapNaviCalcRouteState)
 {
-    AMapNaviCalcRouteStateEnvFailed = 0,            ///< 0 Push执行环境不具备
-    AMapNaviCalcRouteStateSucceed = 1,              ///< 1 路径计算成功/Push数据操作执行成功
-    AMapNaviCalcRouteStateNetworkError = 2,         ///< 2 网络超时或网络失败
+    AMapNaviCalcRouteStateEnvFailed = 0,                ///< 0 环境初始化错误
+    AMapNaviCalcRouteStateSucceed = 1,                  ///< 1 路径计算成功
+    AMapNaviCalcRouteStateNetworkError = 2,             ///< 2 网络失败
     AMapNaviCalcRouteStateParamInvalid = AMapNaviCalcRouteStateNetworkError,///< 2 Push数据包含无效参数、不合理参数
-    AMapNaviCalcRouteStateStartPointError = 3,      ///< 3 起点错误
-    AMapNaviCalcRouteStateProtocolError,            ///< 4 协议解析错误
-    AMapNaviCalcRouteStateCallCenterError,          ///< 5 呼叫中心错误
-    AMapNaviCalcRouteStateEndPointError,            ///< 6 终点错误
-    AMapNaviCalcRouteStateEncodeFalse,              ///< 7 服务端编码错误
-    AMapNaviCalcRouteStateLackPreview,              ///< 8 数据缺乏预览数据
-    AMapNaviCalcRouteStateDataBufError,             ///< 9 数据格式错误
-    AMapNaviCalcRouteStateStartRouteError,          ///< 10 起点没有找到道路
-    AMapNaviCalcRouteStateEndRouteError,            ///< 11 没有找到通向终点的道路
-    AMapNaviCalcRouteStatePassRouteError,           ///< 12 没有找到通向途经点的道路
-    AMapNaviCalcRouteStateRouteFail,                ///< 13 算路失败（未知错误）
-    AMapNaviCalcRouteStateForbid = 100,             ///< 100 Push数据操作执行时机不当，拒绝执行
+    AMapNaviCalcRouteStateStartPointError = 3,          ///< 3 起点错误
+    AMapNaviCalcRouteStateProtocolError = 4,            ///< 4 协议解析错误
+    AMapNaviCalcRouteStateCallCenterError = 5,          ///< 5 呼叫中心错误
+    AMapNaviCalcRouteStateEndPointError = 6,            ///< 6 终点错误
+    AMapNaviCalcRouteStateEncodeFalse = 7,              ///< 7 服务端编码错误
+    AMapNaviCalcRouteStateLackPreview = 8,              ///< 8 数据缺乏预览数据
+    AMapNaviCalcRouteStateDataBufError = 9,             ///< 9 数据格式错误
+    AMapNaviCalcRouteStateStartRouteError = 10,         ///< 10 没有找到通向起点的道路
+    AMapNaviCalcRouteStateEndRouteError = 11,           ///< 11 没有找到通向终点的道路
+    AMapNaviCalcRouteStatePassRouteError = 12,          ///< 12 没有找到通向途经点的道路
+    AMapNaviCalcRouteStateRouteFail = 13,               ///< 13 算路失败
+    AMapNaviCalcRouteStateForbid = 100,                 ///< 100 Push数据操作执行时机不当
     
 };
 
@@ -119,6 +119,7 @@ typedef NS_ENUM(NSInteger, AMapNaviIconType)
 ///导航播报类型
 typedef NS_ENUM(NSInteger, AMapNaviSoundType)
 {
+    AMapNaviSoundTypeDefault = -1,                  ///< -1 默认播报(导航播报)
     AMapNaviSoundTypeNaviInfo = 1,                  ///< 1 导航播报
     AMapNaviSoundTypeFrontTraffic = 2,              ///< 2 前方路况
     AMapNaviSoundTypeSurroundingTraffic = 4,        ///< 4 周边路况
@@ -202,6 +203,40 @@ typedef NS_ENUM(NSInteger, AMapNaviRouteStatus)
     AMapNaviRouteStatusSeriousJam,                  ///< 4 严重阻塞
 };
 
+///路径规划时POI点的起终点类型
+typedef NS_ENUM(NSInteger, AMapNaviRoutePlanPOIType)
+{
+    AMapNaviRoutePlanPOITypeStart = 0,              ///< 0 起点
+    AMapNaviRoutePlanPOITypeEnd,                    ///< 1 终点
+    AMapNaviRoutePlanPOITypeWay,                    ///< 2 途径点
+};
+
+///可切换到的平行路类型 since 5.3.0
+typedef NS_ENUM(NSInteger, AMapNaviParallelRoadStatusFlag)
+{
+    AMapNaviParallelRoadStatusFlagNone = 0,         ///< 0 无主辅路可切换
+    AMapNaviParallelRoadStatusFlagAssist = 1,       ///< 1 可切换到辅路
+    AMapNaviParallelRoadStatusFlagMain = 2,         ///< 2 可切换到主路
+};
+
+///导航组件主题皮肤类型 since 5.4.0
+typedef NS_ENUM(NSInteger, AMapNaviCompositeThemeType)
+{
+    AMapNaviCompositeThemeTypeDefault = 0,          ///< 0 蓝色系
+    AMapNaviCompositeThemeTypeLight = 1,            ///< 1 浅色系
+    AMapNaviCompositeThemeTypeDark = 2,             ///< 2 暗色系
+};
+
+///导航过程中提示音的类型 since 5.4.0
+typedef NS_ENUM(NSInteger, AMapNaviRingType)
+{
+    AMapNaviRingTypeNULL = 0,                       ///< 0 无
+    AMapNaviRingTypeReroute = 1,                    ///< 1 偏航重算的提示音
+    AMapNaviRingTypeDing = 100,                     ///< 100 即将到达转向路口时的提示音
+    AMapNaviRingTypeDong = 101,                     ///< 101 导航状态下通过测速电子眼的提示音
+    AMapNaviRingTypeElecDing = 102,                 ///< 102 巡航状态下通过电子眼（所有类型）的提示音
+};
+
 #pragma mark - LaneInfo Image
 
 /**
@@ -244,6 +279,13 @@ FOUNDATION_EXTERN AMapNaviDrivingStrategy ConvertDrivingPreferenceToDrivingStrat
  * @return AMapNaviPoint类对象id
  */
 + (AMapNaviPoint *)locationWithLatitude:(CGFloat)lat longitude:(CGFloat)lon;
+
+/**
+ * @brief 判断点是否与当前点相同
+ * @param aPoint 需要判断的点
+ * @return 两个点是否相同
+ */
+- (BOOL)isEqualToNaviPoint:(AMapNaviPoint *)aPoint;
 
 @end
 
@@ -289,10 +331,35 @@ FOUNDATION_EXTERN AMapNaviDrivingStrategy ConvertDrivingPreferenceToDrivingStrat
 
 @end
 
+#pragma mark - AMapNaviGroupSegment
+
+///聚合段信息类 since 5.1.0
+@interface AMapNaviGroupSegment : NSObject<NSCopying>
+
+///聚合段名称
+@property (nonatomic, strong) NSString *groupName;
+
+///聚合段长度,单位:米
+@property (nonatomic, assign) NSInteger distance;
+
+///聚合段收费金额,单位:元
+@property (nonatomic, assign) NSInteger toll;
+
+///聚合段包含的起始导航段下标
+@property (nonatomic, assign) NSInteger startSegmentID;
+
+///聚合段包含导航段个数
+@property (nonatomic, assign) NSInteger segmentCount;
+
+///聚合段是否到达途径点
+@property (nonatomic, assign) BOOL isArriveWayPoint;
+
+@end
+
 #pragma mark - AMapNaviTrafficStatus
 
 ///前方交通路况信息类
-@interface AMapNaviTrafficStatus : NSObject
+@interface AMapNaviTrafficStatus : NSObject<NSCopying>
 
 ///道路状态
 @property (nonatomic, assign) AMapNaviRouteStatus status;
@@ -456,5 +523,15 @@ FOUNDATION_EXTERN AMapNaviDrivingStrategy ConvertDrivingPreferenceToDrivingStrat
 
 ///tips描述，titleType为0或1时才有描述
 @property (nonatomic, strong) NSString *tips;
+
+@end
+
+#pragma mark - AMapNaviParallelRoadStatus
+
+///平行路状态信息 since 5.3.0
+@interface AMapNaviParallelRoadStatus : NSObject
+
+///主辅路标识(存在平行路时,可切换到的平行路类型)
+@property (nonatomic, assign) AMapNaviParallelRoadStatusFlag flag;
 
 @end
